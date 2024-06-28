@@ -152,9 +152,15 @@ const Home = () => {
         {isVideoVisible && (
           <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex items-center justify-center z-50">
             <div className="relative w-11/12 max-w-5xl">
-              <video controls className="w-full h-full">
-                <source src="/videos/video2.mp4" type="video/mp4" />
-              </video>
+              <iframe
+                width="100%"
+                height="500px"
+                src="https://www.youtube.com/embed/AMe6HJriKZw"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
               <button
                 onClick={toggleVideo}
                 className="absolute top-2 right-2 bg-gray-800 text-white py-2 px-5 rounded-lg cursor-pointer transition-colors hover:bg-red-500"
