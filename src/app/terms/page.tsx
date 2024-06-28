@@ -1,4 +1,3 @@
-// src/app/terms/page.tsx
 import React from 'react';
 import { NavBar } from '../../../components/NavBar';
 import Footer from '../../../components/Footer';
@@ -20,13 +19,13 @@ const Terms = () => {
           <p>You must be at least 13 years old to use True Social Token. By creating an account, you confirm that you are at least 13 years old and that you are responsible for your account’s activities. You must provide accurate information and keep this information up to date. To create or use an account on True Social Token, you must also be old enough to consent to the processing of your personal data in your jurisdiction or have permission from your parent or guardian if required.</p>
           
           <h2 className="text-2xl font-semibold mt-6">Content and Creations</h2>
-          <p>As a creator on True Social Token, you may establish a creator page to engage with users who support your digital content through subscriptions or one-time purchases. You retain ownership of the content you post, subject to our platform’s right to use and display your content as part of our services.</p>
+          <p>As a growing venture on True Social Token, you may establish a growing venture page to engage with users who support your digital content through subscriptions or one-time purchases. You retain ownership of the content you post, subject to our platform’s right to use and display your content as part of our services.</p>
           
           <h2 className="text-2xl font-semibold mt-6">Payments and Subscriptions</h2>
-          <p>Creators may offer their content on a one-time or subscription basis. Prices may be displayed in the user's local currency and adjusted for blockchain transaction fees as determined by the network and True Social Token’s discretion. Creators are responsible for complying with tax regulations and for setting realistic expectations within their offerings.</p>
+          <p>Growing ventures may offer their content on a one-time or subscription basis. Prices may be displayed in the user's local currency and adjusted for blockchain transaction fees as determined by the network and True Social Token’s discretion. Growing ventures are responsible for complying with tax regulations and for setting realistic expectations within their offerings.</p>
           
           <h2 className="text-2xl font-semibold mt-6">Intellectual Property</h2>
-          <p>Creators are responsible for ensuring they have all the necessary rights to the content they upload to True Social Token. The platform respects intellectual property laws and expects the same from its users.</p>
+          <p>Growing ventures are responsible for ensuring they have all the necessary rights to the content they upload to True Social Token. The platform respects intellectual property laws and expects the same from its users.</p>
           
           <h2 className="text-2xl font-semibold mt-6">Prohibited Conduct</h2>
           <p>Users must not engage in illegal activities, abuse the platform’s technical infrastructure, or conduct themselves in a manner that could be deemed as abusive or harmful to other users or the platform.</p>

@@ -12,7 +12,6 @@ import { getContract } from "thirdweb";
 import { stakingABI } from "../utils/stakingABI";
 import { StakingData, stakingData } from "../utils/data";
 
-
 const NFTCard = dynamic(() => import("./NFTCard").then(mod => mod.NFTCard));
 const StakedNFTCard = dynamic(() => import("./StakedNFTCard").then(mod => mod.StakedNFTCard));
 const StakeRewards = dynamic(() => import("./StakeRewards").then(mod => mod.StakeRewards));
@@ -144,13 +143,20 @@ const Staking = ({ data }: StakingProps) => {
       </div>
       <h2 className="text-lg font-bold">{data.creatorName}</h2>
       <p className="text-center text-sm mb-3">{data.description}</p>
+      <a 
+        href={data.pdfUrl} 
+        download 
+        className="text-xs bg-blue-600 text-white py-1 px-3 rounded-lg cursor-pointer transition-colors hover:bg-blue-500 mt-3"
+      >
+        Download Financial report
+      </a>
+      <br />
       <hr className="w-full border-gray-800"/>
       <div className="text-center text-sm mb-3">
         <h3 className="text-md font-semibold">Symbol: {data.tokenSymbol}</h3>
-        {/* <p>ROI: {data.roi}</p> */}
         <p>Price: {data.tokenPrice}</p>
-        <p>Liquidity: {data.liquidity}</p>
-        <p>20% of creator income goes to liquidity</p>
+        <img src={data.liquidityImgUrl} alt="Liquidity" className="inline-block h-5 w-5 ml-2"/>
+        <p>10% of profit goes to liquidity</p>
         <img src={data.infoImgUrl} alt="Info" className="mt-2"/>
       </div>
       <button
@@ -199,16 +205,11 @@ const Staking = ({ data }: StakingProps) => {
       </div>
       <h2 className="text-lg font-bold">{data.creatorName}</h2>
       <p className="text-center text-sm mb-3">{data.description}</p>
+     
       <hr className="w-full border-gray-800"/>
-      <div className="text-center text-sm mb-3">
-        <h3 className="text-md font-semibold">Token Symbol: {data.tokenSymbol}</h3>
-        <p>ROI: {data.roi}</p>
-        <p>Token Price: {data.tokenPrice}</p>
-        <p>Liquidity: {data.liquidity}</p>
-        <p>20% of creator income goes to liquidity</p>
-        <img src={data.infoImgUrl} alt="Info" className="mt-2"/>
-      </div>
+     
       <hr className="w-full border-gray-800"/>
+        <br />
       <div className="bg-white bg-opacity-10 p-3 rounded-lg shadow-lg mb-3 w-full">
         <h3 className="text-md font-semibold mb-1">Impact in Social Media</h3>
         <div className="flex flex-col space-y-2 text-sm">

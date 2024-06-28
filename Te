@@ -143,7 +143,7 @@ const Staking = ({ data }: StakingProps) => {
         <p>ROI: {data.roi}</p>
         <p>Token Price: {data.tokenPrice}</p>
         <p>Liquidity: {data.liquidity}</p>
-        <p>20% of creator income goes to liquidity</p>
+        <p>10% of income goes to liquidity</p>
       </div>
       <button
         onClick={() => setFullView(true)}
@@ -187,7 +187,7 @@ const Staking = ({ data }: StakingProps) => {
         <p>ROI: {data.roi}</p>
         <p>Token Price: {data.tokenPrice}</p>
         <p>Liquidity: {data.liquidity}</p>
-        <p>20% of creator income goes to liquidity</p>
+        <p>10% income goes to liquidity</p>
       </div>
       <hr className="w-full border-gray-800"/>
       <div className="bg-white bg-opacity-10 p-3 rounded-lg shadow-lg mb-3 w-full">
