@@ -25,6 +25,7 @@ const Staking = ({ data }: StakingProps) => {
   const [ownedNFS, setOwnedNFS] = useState<NFT[]>([]);
   const [fullView, setFullView] = useState(false);
   const [showSellModal, setShowSellModal] = useState(false);
+  const [showPdfModal, setShowPdfModal] = useState(false);
 
   const NFT_CONTRACT = getContract({
     client: client,
@@ -106,13 +107,17 @@ const Staking = ({ data }: StakingProps) => {
     setShowSellModal(true);
   };
 
+  const handlePdfClick = () => {
+    setShowPdfModal(true);
+  };
+
   const renderSmallView = () => (
     <div className="relative flex flex-col items-center rounded-lg w-10/12 max-w-xs p-4 mx-auto text-white border border-blue-300 border-opacity-50">
       <div className="flex flex-row items-center justify-between my-3 w-full">
         <div className="flex items-center">
           <img 
             src={data.imgUrl} 
-            alt="Creator" 
+            alt="Creador" 
             className="h-10 w-10 rounded-full object-cover mr-3"
           />
         </div>
@@ -126,44 +131,43 @@ const Staking = ({ data }: StakingProps) => {
               })
             )}
             onTransactionConfirmed={() => {
-              alert("NFT bought!");
+              alert("NFT comprado!");
               getOwnedNFS();
             }}
             className="text-xs bg-green-600 text-white py-1 px-3 rounded-lg cursor-pointer transition-colors hover:bg-green-500"
           >
-            BUY
+            COMPRAR
           </TransactionButton>
           <button
             onClick={handleSellClick}
             className="text-xs bg-red-600 text-white py-1 px-3 rounded-lg cursor-pointer transition-colors hover:bg-red-500"
           >
-            SELL
+            VENDER
           </button>
         </div>
       </div>
       <h2 className="text-lg font-bold">{data.creatorName}</h2>
       <p className="text-center text-sm mb-3">{data.description}</p>
-      <a 
-        href={data.pdfUrl} 
-        download 
+      {/* <button 
+        onClick={handlePdfClick} 
         className="text-xs bg-blue-600 text-white py-1 px-3 rounded-lg cursor-pointer transition-colors hover:bg-blue-500 mt-3"
       >
-        Download Financial report
-      </a>
+        Ver informe financiero
+      </button> */}
       <br />
       <hr className="w-full border-gray-800"/>
       <div className="text-center text-sm mb-3">
-        <h3 className="text-md font-semibold">Symbol: {data.tokenSymbol}</h3>
-        <p>Price: {data.tokenPrice}</p>
-        <img src={data.liquidityImgUrl} alt="Liquidity" className="inline-block h-5 w-5 ml-2"/>
-        <p>10% of profit goes to liquidity</p>
-        <img src={data.infoImgUrl} alt="Info" className="mt-2"/>
+        <h3 className="text-md font-semibold">Símbolo: {data.tokenSymbol}</h3>
+        <p>Precio: {data.tokenPrice}</p>
+        <img src={data.liquidityImgUrl} alt="Liquidez" className="inline-block h-5 w-5 ml-2"/>
+        <p>10% de las ganancias van a la liquidez</p>
+        <img src={data.infoImgUrl} alt="Información" className="mt-2"/>
       </div>
       <button
         onClick={() => setFullView(true)}
         className="text-xs bg-blue-600 text-white py-1 px-3 rounded-lg cursor-pointer transition-colors hover:bg-blue-500 mt-3"
       >
-        Full Information
+        Información completa
       </button>
     </div>
   );
@@ -174,7 +178,7 @@ const Staking = ({ data }: StakingProps) => {
         <div className="flex items-center">
           <img 
             src={data.imgUrl} 
-            alt="Creator" 
+            alt="Creador" 
             className="h-10 w-10 rounded-full object-cover mr-3"
           />
         </div>
@@ -188,18 +192,18 @@ const Staking = ({ data }: StakingProps) => {
               })
             )}
             onTransactionConfirmed={() => {
-              alert("NFT bought!");
+              alert("NFT comprado!");
               getOwnedNFS();
             }}
             className="text-xs bg-green-600 text-white py-1 px-3 rounded-lg cursor-pointer transition-colors hover:bg-green-500"
           >
-            BUY
+            COMPRAR
           </TransactionButton>
           <button
             onClick={handleSellClick}
             className="text-xs bg-red-600 text-white py-1 px-3 rounded-lg cursor-pointer transition-colors hover:bg-red-500"
           >
-            SELL
+            VENDER
           </button>
         </div>
       </div>
@@ -210,8 +214,8 @@ const Staking = ({ data }: StakingProps) => {
      
       <hr className="w-full border-gray-800"/>
         <br />
-      <div className="bg-white bg-opacity-10 p-3 rounded-lg shadow-lg mb-3 w-full">
-        <h3 className="text-md font-semibold mb-1">Impact in Social Media</h3>
+      <div className="bg-white bg-opacity-10 p-3 redondeado-lg shadow-lg mb-3 w-full">
+        <h3 className="text-md font-semibold mb-1">Impacto en las redes sociales</h3>
         <div className="flex flex-col space-y-2 text-sm">
         {/* @ts-ignore */}
           {data.socialMedia.map((social, index) => (
@@ -219,21 +223,29 @@ const Staking = ({ data }: StakingProps) => {
               {social.platform === "Instagram" && <FaInstagram className="w-5 h-5" />}
               {social.platform === "X" && <FaTwitter className="w-5 h-5" />}
               {social.platform === "TikTok" && <FaTiktok className="w-5 h-5" />}
-              <span>{social.platform} - {formatFollowers(social.followers)} followers</span>
+              <span>{social.platform} - {formatFollowers(social.followers)} seguidores</span>
             </button>
           ))}
+        </div>
+        <div>
+        <button 
+        onClick={handlePdfClick} 
+        className="text-xs bg-blue-600 text-white py-1 px-3 rounded-lg cursor-pointer transition-colors hover:bg-blue-500 mt-3"
+      >
+        Ver informe financiero
+      </button>
         </div>
       </div>
       <hr className="w-full border-gray-800"/>
       <div className="my-3 w-full text-sm">
-        <h2 className="text-md font-semibold mb-2">Owned NFS</h2>
+        <h2 className="text-md font-semibold mb-2">NFS Poseídas</h2>
         <button
           onClick={() => window.open(data.exclusiveContentLink, "_blank")}
           className="text-xs bg-blue-600 text-white py-1 px-3 rounded-lg cursor-pointer transition-colors hover:bg-blue-500 mt-3"
         >
-          Exclusive Content
+          Contenido Exclusivo
         </button>
-        <div className="flex flex-row flex-wrap justify-center w-full">
+        <div className="flex flex-row flex-wrap justificar-centro w-full">
           {ownedNFS && ownedNFS.length > 0 ? (
             ownedNFS.map((nfsItem) => (
               <NFTCard
@@ -246,14 +258,14 @@ const Staking = ({ data }: StakingProps) => {
               />
             ))
           ) : (
-            <p>You own 0 NFS</p>
+            <p>No tienes NFS</p>
           )}
         </div>
       </div>
       <hr className="w-full border-gray-800"/>
       <div className="my-3 w-full text-sm">
-        <h2 className="text-md font-semibold mb-2">Allocated NFS</h2>
-        <div className="flex flex-row flex-wrap justify-center w-full">
+        <h2 className="text-md font-semibold mb-2">NFS Asignadas</h2>
+        <div className="flex flex-row flex-wrap justificar-centro w-full">
           {stakedInfo && stakedInfo[0].length > 0 ? (
             stakedInfo[0].map((nfsItem: any, index: number) => (
               <StakedNFTCard
@@ -266,24 +278,42 @@ const Staking = ({ data }: StakingProps) => {
               />
             ))
           ) : (
-            <p>No NFS allocated</p>
+            <p>No hay NFS asignadas</p>
           )}
         </div>
       </div>
       <hr className="w-full border-gray-800"/>
       <StakeRewards rewardTokenContract={REWARD_TOKEN_CONTRACT} stakingContract={STAKING_CONTRACT} />
       {showSellModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-          <div className="relative bg-white rounded-lg w-11/12 max-w-5xl p-6">
+        <div className="fixed inset-0 z-50 flex items-center justificar-centro bg-negro bg-opacidad-75">
+          <div className="relative bg-blanco redondeado-lg w-11/12 max-w-5xl p-6">
             <button
               onClick={() => setShowSellModal(false)}
               className="absolute top-2 right-2 bg-gray-800 text-white py-2 px-5 rounded-lg cursor-pointer transition-colors hover:bg-red-500"
             >
-              Close
+              Cerrar
             </button>
             <iframe
-              title="sell-content"
+              title="vender-contenido"
               src={data.sellLink}
+              style={{ border: "none", width: "100%", height: "80vh" }}
+              allow="fullscreen"
+            ></iframe>
+          </div>
+        </div>
+      )}
+      {showPdfModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+          <div className="relative bg-white rounded-lg w-11/12 max-w-5xl p-6">
+            <button
+              onClick={() => setShowPdfModal(false)}
+              className="absolute top-2 right-2 bg-gray-800 text-white py-2 px-5 rounded-lg cursor-pointer transition-colors hover:bg-red-500"
+            >
+              Cerrar
+            </button>
+            <iframe
+              title="informe-financiero"
+              src={data.pdfUrl}
               style={{ border: "none", width: "100%", height: "80vh" }}
               allow="fullscreen"
             ></iframe>
@@ -294,7 +324,7 @@ const Staking = ({ data }: StakingProps) => {
         onClick={() => setFullView(false)}
         className="text-xs bg-blue-600 text-white py-1 px-3 rounded-lg cursor-pointer transition-colors hover:bg-blue-500 mt-3"
       >
-        Close Full Information
+        Cerrar Información Completa
       </button>
     </div>
   );
