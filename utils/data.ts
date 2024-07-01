@@ -61,7 +61,7 @@ export const stakingData: StakingData[] = [
     ],
     infoImgUrl: "/images/fit2.png",
     exclusiveContentLink: "https://app.darkblock.io/platform/matic/embed/collection/0xc1Db4038de013D5653A710EFb97678fD46837A52",
-    pdfUrl: "/pdfs/Gordito_Fitt.pdf",
+    pdfUrl: "/pdfs/fit-1.pdf",
   },
   // @ts-ignore
   {
