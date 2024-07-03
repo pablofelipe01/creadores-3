@@ -50,8 +50,8 @@ const Pricing = () => {
             <div className="absolute inset-0 bg-black opacity-50"></div>
             <NavBar />
             <main className="relative py-16 px-4 flex-grow pt-40">
-                <h1 className="text-4xl font-bold text-white mb-10 text-center">Pricing Plans for Creators</h1>
-                <p className="text-center text-sm text-gray-300 mt-4"> * If you are not a creator, you do not need a payment plan..</p>
+                <h1 className="text-4xl font-bold text-white mb-10 text-center">Para emprendedores</h1>
+                <p className="text-center text-sm text-gray-300 mt-4"> * Si no heres emprendedor no necesitas plan de pago...</p>
                 <br />
                 <div className="flex justify-center">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
@@ -61,7 +61,7 @@ const Pricing = () => {
                     </div>
                 </div>
                 <p className="text-center text-sm text-gray-300 mt-4">
-                    * Cancellation available after 3 months at any time.
+                    * Puedes cancelar después de 3 meses.
                 </p>
                 <Footer />
             </main>
