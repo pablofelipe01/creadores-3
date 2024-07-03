@@ -73,7 +73,7 @@ const Home = () => {
                 className="object-cover"
               />
             </div>
-            <p className="text-lg md:text-2xl text-gray-200 mb-4">El mercado de valores de los emprendedores</p>
+            {/* <p className="text-lg md:text-2xl text-gray-200 mb-4">El mercado de valores de los emprendedores</p> */}
             <button 
               onClick={toggleVideo} 
               className="bg-gradient-to-r from-red-500 via-orange-400 via-yellow-300 via-green-400 via-blue-400 to-purple-500 text-white py-2 px-6 rounded-lg hover:opacity-90 transition mb-8 flex items-center space-x-2"
@@ -85,29 +85,18 @@ const Home = () => {
               <div className="flex items-center mb-4">
                 <FaWallet className="text-blue-400 text-2xl mr-3" />
                 <p className="text-gray-200 text-md">
-                  Si te gusta invertir en tu emprendimiento favorito, solo conecta tu billetera. No te preocupes si no tienes una billetera, se te creará automáticamente.
+                ¿Te gustaría invertir en tu emprendimiento favorito? Solo conecta tu billetera. No te preocupes si no tienes una, se creará automáticamente.
                 </p>
               </div>
               <div className="flex items-center">
                 <FaUser className="text-green-400 text-2xl mr-3" />
                 <p className="text-gray-200 text-md">
-                  Si eres un emprendimiento o un creador de contenido interesado en financiar tu negocio, haz clic en el botón de emprendimiento a continuación.
+                  Si eres un emprendedor o un creador de contenido interesado en financiar tu proyecto, haz clic en el botón de emprendimiento a continuación.
                 </p>
               </div>
             </div>
             <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
-              <ConnectButton 
-                client={client} 
-                chain={chain} 
-                theme={"dark"}
-                connectButton={{ label: "Conectar" }}
-                connectModal={{ 
-                  size: "compact", 
-                  showThirdwebBranding: false, 
-                  titleIcon:
-                  "https://tokensolutions.mypinata.cloud/ipfs/QmQj16wnaNXC8ribmhFMdkesgbYCjKrZz1GCswKV5U5vsS",
-                }}
-              />
+            
               <button 
                 onClick={handleEmprendimientoClick} 
                 className="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-500 transition"
@@ -122,7 +111,7 @@ const Home = () => {
                 <span>Únete a nuestra comunidad</span>
               </button>
             </div>
-            <p className="text-gray-400 text-sm mt-4">
+            <p className="text-gray-400 text-sm mt-4 custom-margin-bottom"> {/* Aplica la clase personalizada aquí */}
               Al conectar o crear una billetera, estás aceptando los <a href="/terms" className="text-blue-400 hover:underline">términos y condiciones</a> de este sitio web y sus aplicaciones.
             </p>
           </header>
@@ -182,75 +171,79 @@ const Home = () => {
           {isFAQVisible && (
             <div className="text-white">
               {[
-                {
-                  question: "¿Qué es TRUE SOCIAL TOKEN (TST)?",
-                  answer: "TRUE SOCIAL TOKEN (TST) es una herramienta poderosa que te apoya en hacer lo que amas, conectándote directamente con tu comunidad. Sin intermediarios ni algoritmos que interfieran, TST te da la oportunidad de ser financieramente independiente."
-                },
-                {
-                  question: "Tenías mi curiosidad. Ahora tienes mi atención. ¿Cómo funciona?",
-                  answer: "Con TST puedes financiar tu propio emprendimiento vendiendo Non Fungible Shares (NFS) y recibiendo financiamiento directamente de tu comunidad."
-                },
-                {
-                  question: "¿Cómo empiezo?",
-                  answer: "Después de registrarte, puedes comenzar configurando tu perfil, añadiendo tus cuentas de redes sociales y pensando en cómo tu comunidad podría apoyarte."
-                },
-                {
-                  question: "¿Qué es un NFS?",
-                  answer: "NFS significa Non Fungible Share. Funciona de manera similar a las acciones en la bolsa de valores, pero de tu emprendimiento. Las NFS son pases exclusivos para tu comunidad."
-                },
-                {
-                  question: "¿Para qué sirve?",
-                  answer: "Lo más importante es que las NFS generan “Puntos de Recompensa” y estos puntos pueden cambiarse por dinero. El valor de los puntos está directamente relacionado con el crecimiento de tu emprendimiento, así como en la bolsa de valores."
-                },
-                {
-                  question: "¿Algo más puedo hacer con las NFS?",
-                  answer: "Sí, puedes distribuir contenido exclusivo, beneficios especiales, descuentos, conciertos privados, enlaces a transmisiones en vivo, grupos de WhatsApp, una tarjeta de cumpleaños personal (el límite está en tu creatividad). Solo los usuarios que han comprado tu NFS y la almacenan en su billetera TST tienen acceso. TST te permite vivir de tu comunidad y liberarte de algoritmos secretos o de vender tu alma a los bancos."
-                },
-                {
-                  question: "¿Cómo funcionan las NFS?",
-                  answer: "Tan pronto como un fan compra una NFS, se almacena en su billetera TST (porque técnicamente es un NFT). Ahora tu fan tiene derecho a todos los beneficios de ese nivel. Recomendamos ofrecer diferentes niveles de NFS, variando en el precio y los beneficios. Cuanto mayor sea el pago, mayor será la recompensa."
-                },
-                {
-                  question: "¿Cómo puedo financiarme a través de TST?",
-                  answer: "Con TST recibes inversiones de tu comunidad que te ayudan a realizar o prefinanciar algo que necesitas o quieres hacer: mejor equipo, contenido especial... lo que necesites para mejorar tu emprendimiento y vender más. Dentro de la NFS ofreces un porcentaje de la utilidad trimestral de tu emprendimiento a cambio de este financiamiento. Solo la tecnología WEB3 de TST permite que esto sea posible de una manera directa y transparente, sin intermediarios ni comisiones (ni siquiera necesitas bancos) y es MUY fácil de usar.\n\nCon una inversión de tu comunidad, comprometes una parte de tus ganancias. Tú decides: pedir un préstamo y devolver un porcentaje de tus ganancias en forma de intereses a un banco que nunca va a comprar tu producto ni a consumir tu contenido, o distribuirlo entre tus fans más leales."
-                },
-                {
-                  question: "¿Estoy vendiendo o cediendo algún porcentaje de mi emprendimiento?",
-                  answer: "No, tu emprendimiento seguirá siendo tuyo al 100%. Aquí solo estás comprometiendo un porcentaje de tu éxito con tu comunidad, esa comunidad que cree en ti y que ama lo que haces. Les estás diciendo, si me va bien a mí, les doy mejores productos, mejor contenido y además comparto mi éxito financiero con ustedes, que son la razón principal de que mi proyecto exista."
-                },
-                {
-                  question: "¿Cómo hago que la gente me apoye en TST?",
-                  answer: "Depende completamente de ti. Un buen comienzo es compartir tu enlace donde publicas tu contenido (YouTube, Instagram, Twitch, etc.), recordar a tus seguidores en tus podcasts o videos y explicarles qué significa para ti."
-                },
-                {
-                  question: "¿Necesito tener conocimientos sobre blockchain o web3?",
-                  answer: "Absolutamente no. Hemos diseñado nuestro software para que sea simple y fluido para cualquier usuario."
-                },
-                {
-                  question: "¿Puedo seguir usando y operando mis otras plataformas como Cameo, Patreon, OnlyFans?",
-                  answer: "¡Por supuesto! Tú, el emprendimiento, puedes seguir usando tus otras cuentas y canales de redes sociales."
-                },
-                {
-                  question: "¿Qué es una billetera?",
-                  answer: "Una billetera es un hogar para tu activo digital. Se usan para enviar, recibir, almacenar y mostrar activos digitales. Es como una billetera real, solo que menos desordenada. Aprende más: [Understanding Web3](https://learn.rainbow.me/understanding-web3)"
-                },
-                {
-                  question: "¿Qué es un NFT?",
-                  answer: "Un token no fungible (NFT) es un activo digital único que representa la propiedad de artículos únicos. Nos da la capacidad de tokenizar cosas como arte, coleccionables o casi cualquier cosa. Muchos llaman a los NFTs un certificado de propiedad o autenticidad. Están almacenados en la blockchain y, por lo tanto, son completamente transparentes y no pueden ser manipulados."
-                },
-                {
-                  question: "¿Qué es un Punto de Recompensa?",
-                  answer: "Un Punto de Recompensa es un token fungible con liquidez suficiente para ser cambiado por dólares digitales en cualquier momento."
-                },
-                {
-                  question: "¿Dónde puedo aprender más sobre blockchain y web3?",
-                  answer: "Un buen comienzo es aquí: [Ethereum Learn](https://ethereum.org/en/learn/)"
-                },
-                {
-                  question: "¿TST posee o tiene acceso a mis tokens o a las inversiones de mi comunidad?",
-                  answer: "No, TST es un software no custodiado. Los usuarios son responsables de gestionar sus propias cuentas. TST solo es un proveedor de tecnología WEB3."
-                }
-              ].map((faq, index) => (
+{
+  "question": "¿Por qué nuestro logo es morado?",
+  "answer": "Nuestro logo es morado en honor a nuestro hijo David. El morado es el color que representa la epilepsia, una condición con la que David ha vivido desde que era un bebé. Este color simboliza nuestra lucha y compromiso personal, y nos recuerda cada día por qué hacemos lo que hacemos."
+},             
+  {
+    "question": "¿Qué es TRUE SOCIAL TOKEN (TST)?",
+    "answer": "TRUE SOCIAL TOKEN (TST) es una herramienta poderosa que te apoya en hacer lo que amas, conectándote directamente con tu comunidad. Sin intermediarios ni algoritmos que interfieran, TST te da la oportunidad de ser financieramente independiente."
+  },
+  {
+    "question": "Tenías mi curiosidad. Ahora tienes mi atención. ¿Cómo funciona?",
+    "answer": "Con TST puedes financiar tu propio emprendimiento vendiendo Non Fungible Passports (NFP) y recibiendo financiamiento directamente de tu comunidad."
+  },
+  {
+    "question": "¿Cómo empiezo?",
+    "answer": "Después de registrarte, puedes comenzar configurando tu perfil, añadiendo tus cuentas de redes sociales y pensando en cómo tu comunidad podría apoyarte."
+  },
+  {
+    "question": "¿Qué es un NFP?",
+    "answer": "NFP significa Non Fungible Passport. Funciona de manera similar a las acciones en la bolsa de valores, pero de tu emprendimiento. Los NFP son pases exclusivos para tu comunidad."
+  },
+  {
+    "question": "¿Para qué sirve?",
+    "answer": "Lo más importante es que los NFP generan “Puntos de Recompensa” y estos puntos pueden cambiarse por dinero. El valor de los puntos está directamente relacionado con el crecimiento de tu emprendimiento, así como en la bolsa de valores."
+  },
+  {
+    "question": "¿Algo más puedo hacer con los NFP?",
+    "answer": "Sí, puedes distribuir contenido exclusivo, beneficios especiales, descuentos, conciertos privados, enlaces a transmisiones en vivo, grupos de WhatsApp, una tarjeta de cumpleaños personal (el límite está en tu creatividad). Solo los usuarios que han comprado tu NFP y la almacenan en su billetera TST tienen acceso. TST te permite vivir de tu comunidad y liberarte de algoritmos secretos o de vender tu alma a los bancos."
+  },
+  {
+    "question": "¿Cómo funcionan los NFP?",
+    "answer": "Tan pronto como un fan compra un NFP, se almacena en su billetera TST (porque técnicamente es un NFT). Ahora tu fan tiene derecho a todos los beneficios de ese nivel. Recomendamos ofrecer diferentes niveles de NFP, variando en el precio y los beneficios. Cuanto mayor sea el pago, mayor será la recompensa."
+  },
+  {
+    "question": "¿Cómo puedo financiarme a través de TST?",
+    "answer": "Con TST recibes inversiones de tu comunidad que te ayudan a realizar o prefinanciar algo que necesitas o quieres hacer: mejor equipo, contenido especial... lo que necesites para mejorar tu emprendimiento y vender más. Dentro del NFP ofreces un porcentaje de la utilidad trimestral de tu emprendimiento a cambio de este financiamiento. Solo la tecnología WEB3 de TST permite que esto sea posible de una manera directa y transparente, sin intermediarios ni comisiones (ni siquiera necesitas bancos) y es MUY fácil de usar.\n\nCon una inversión de tu comunidad, comprometes una parte de tus ganancias. Tú decides: pedir un préstamo y devolver un porcentaje de tus ganancias en forma de intereses a un banco que nunca va a comprar tu producto ni a consumir tu contenido, o distribuirlo entre tus fans más leales."
+  },
+  {
+    "question": "¿Estoy vendiendo o cediendo algún porcentaje de mi emprendimiento?",
+    "answer": "No, tu emprendimiento seguirá siendo tuyo al 100%. Aquí solo estás comprometiendo un porcentaje de tu éxito con tu comunidad, esa comunidad que cree en ti y que ama lo que haces. Les estás diciendo, si me va bien a mí, les doy mejores productos, mejor contenido y además comparto mi éxito financiero con ustedes, que son la razón principal de que mi proyecto exista."
+  },
+  {
+    "question": "¿Cómo hago que la gente me apoye en TST?",
+    "answer": "Depende completamente de ti. Un buen comienzo es compartir tu enlace donde publicas tu contenido (YouTube, Instagram, Twitch, etc.), recordar a tus seguidores en tus podcasts o videos y explicarles qué significa para ti."
+  },
+  {
+    "question": "¿Necesito tener conocimientos sobre blockchain o web3?",
+    "answer": "Absolutamente no. Hemos diseñado nuestro software para que sea simple y fluido para cualquier usuario."
+  },
+  {
+    "question": "¿Puedo seguir usando y operando mis otras plataformas como Cameo, Patreon, OnlyFans?",
+    "answer": "¡Por supuesto! Tú, el emprendimiento, puedes seguir usando tus otras cuentas y canales de redes sociales."
+  },
+  {
+    "question": "¿Qué es una billetera?",
+    "answer": "Una billetera es un hogar para tu activo digital. Se usan para enviar, recibir, almacenar y mostrar activos digitales. Es como una billetera real, solo que menos desordenada. Aprende más: [Understanding Web3](https://learn.rainbow.me/understanding-web3)"
+  },
+  {
+    "question": "¿Qué es un NFT?",
+    "answer": "Un token no fungible (NFT) es un activo digital único que representa la propiedad de artículos únicos. Nos da la capacidad de tokenizar cosas como arte, coleccionables o casi cualquier cosa. Muchos llaman a los NFTs un certificado de propiedad o autenticidad. Están almacenados en la blockchain y, por lo tanto, son completamente transparentes y no pueden ser manipulados."
+  },
+  {
+    "question": "¿Qué es un Punto de Recompensa?",
+    "answer": "Un Punto de Recompensa es un token fungible con liquidez suficiente para ser cambiado por dólares digitales en cualquier momento."
+  },
+  {
+    "question": "¿Dónde puedo aprender más sobre blockchain y web3?",
+    "answer": "Un buen comienzo es aquí: [Ethereum Learn](https://ethereum.org/en/learn/)"
+  },
+  {
+    "question": "¿TST posee o tiene acceso a mis tokens o a las inversiones de mi comunidad?",
+    "answer": "No, TST es un software no custodiado. Los usuarios son responsables de gestionar sus propias cuentas. TST solo es un proveedor de tecnología WEB3."
+  }
+].map((faq, index) => (
                 <div key={index} className="mb-4">
                   <div 
                     className="flex justify-between items-center cursor-pointer" 
@@ -265,6 +258,7 @@ const Home = () => {
             </div>
           )}
         </section>
+        <br />
         <Footer />
         <CookieConsent /> {/* Incluye el componente CookieConsent aquí */}
       </main>

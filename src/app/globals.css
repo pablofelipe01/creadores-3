@@ -109,3 +109,8 @@ a {
     color-scheme: dark;
   }
 }
+/* Add this to your globals.css file */
+.custom-margin-bottom {
+  margin-bottom: 0px; /* Ajusta este valor según tus necesidades */
+}
+

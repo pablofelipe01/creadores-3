@@ -11,136 +11,137 @@ const About = () => {
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <NavBar />
       <main className="relative py-16 px-4 flex-grow pt-40 container mx-auto">
-        <h1 className="text-4xl font-bold text-white mb-6 text-center">About True Social Token</h1>
+        <h1 className="text-4xl font-bold text-white mb-6 text-center">Acerca de True Social Token</h1>
         <div className="bg-transparent border border-blue-500 p-6 rounded-lg text-white">
-          <h2 className="text-2xl font-semibold mt-6">Our Vision</h2>
+          <h2 className="text-2xl font-semibold mt-6">Nuestra Visión</h2>
           <p className="mt-4">
-            Revolutionizing the growing venture economy by enabling direct, platform-independent relationships between growing ventures and audiences using decentralized Web3 technology. Our platform empowers growing ventures to maximize engagement and earnings without intermediary constraints.
+            Revolucionar la economía de los emprendimientos en crecimiento permitiendo relaciones directas e independientes de la plataforma entre los emprendimientos y sus audiencias utilizando tecnología Web3 descentralizada. Nuestra plataforma empodera a los emprendimientos en crecimiento para maximizar su compromiso y ganancias sin restricciones de intermediarios.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6">Our Mission</h2>
+          <h2 className="text-2xl font-semibold mt-6">Nuestra Misión</h2>
           <p className="mt-4">
-            We help growing ventures thrive by monetizing their communities through a revolutionary Web3 Token Membership model. As growing ventures succeed, we ensure they and their communities receive financial compensation, incentivizing their collective success.
+            Ayudamos a los emprendimientos en crecimiento a prosperar monetizando sus comunidades a través de un modelo revolucionario de Membresía Token Web3. A medida que los emprendimientos en crecimiento tienen éxito, nos aseguramos de que ellos y sus comunidades reciban compensación financiera, incentivando su éxito colectivo.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6">Why</h2>
+          <h2 className="text-2xl font-semibold mt-6">Por Qué</h2>
           <p className="mt-4">
-            History has consistently demonstrated that technology shifts power away from entrenched institutions and places it directly into the hands of individuals. The original vision of the Internet was to decentralize power, placing it directly in the hands of individuals. This concentration of power in the hands of a few platforms is unlikely to be a sustainable trend. In the coming years, we will witness a significant shift in power from platforms to a group known as growing ventures.
+            La historia ha demostrado consistentemente que la tecnología desvía el poder de las instituciones establecidas y lo coloca directamente en manos de los individuos. La visión original de Internet era descentralizar el poder, colocándolo directamente en manos de las personas. Esta concentración de poder en manos de unas pocas plataformas probablemente no sea una tendencia sostenible. En los próximos años, seremos testigos de un cambio significativo en el poder de las plataformas a un grupo conocido como emprendimientos en crecimiento.
           </p>
           <p className="mt-4">
-            Imagine a world where growing ventures truly own their relationships with their audiences—not merely renting them, but possessing full ownership. This scenario would redefine the dynamics between growing ventures and their followers, fostering deeper connections and greater autonomy over their creative outputs. Today, growing ventures find themselves overly reliant on a limited number of platforms, which can restrict their autonomy and influence.
+            Imagina un mundo donde los emprendimientos en crecimiento realmente posean sus relaciones con sus audiencias, no simplemente alquilándolas, sino poseyéndolas completamente. Este escenario redefiniría la dinámica entre los emprendimientos en crecimiento y sus seguidores, fomentando conexiones más profundas y mayor autonomía sobre sus producciones creativas. Hoy en día, los emprendimientos en crecimiento dependen en exceso de un número limitado de plataformas, lo que puede restringir su autonomía e influencia.
           </p>
           <p className="mt-4">
-            As platforms increasingly recognize the value that growing ventures bring, audiences are also becoming more aware of the critical role they play in the ecosystem. Today, we stand on the brink of a new internet era—Web3. This technology offers the potential to revolutionize how growing ventures establish direct financial relationships with their audiences, empowering them with greater control and independence.
+            A medida que las plataformas reconocen cada vez más el valor que aportan los emprendimientos en crecimiento, las audiencias también están más conscientes del papel crítico que desempeñan en el ecosistema. Hoy, estamos al borde de una nueva era de Internet: Web3. Esta tecnología ofrece el potencial de revolucionar cómo los emprendimientos en crecimiento establecen relaciones financieras directas con sus audiencias, empoderándolos con mayor control e independencia.
           </p>
           <p className="mt-4">
-            Imagine a new model: a subscription between a growing venture and a fan that is independent of any single platform yet operates seamlessly across all major platforms like Instagram, X (formerly Twitter), YouTube, and Facebook. These platforms would agree to honor a "Token Membership," a decentralized, platform-agnostic approach that empowers growing ventures to maintain direct relationships with their fans without being bound by the rules or revenue models of individual platforms. This would allow for greater creative freedom and a stronger, more stable connection between growing ventures and their audiences.
+            Imagina un nuevo modelo: una suscripción entre un emprendimiento en crecimiento y un fan que sea independiente de cualquier plataforma única pero que funcione sin problemas en todas las principales plataformas como Instagram, X (anteriormente Twitter), YouTube y Facebook. Estas plataformas acordarían honrar una "Membresía Token," un enfoque descentralizado y agnóstico de la plataforma que empodera a los emprendimientos en crecimiento para mantener relaciones directas con sus fans sin estar sujetos a las reglas o modelos de ingresos de las plataformas individuales. Esto permitiría una mayor libertad creativa y una conexión más fuerte y estable entre los emprendimientos en crecimiento y sus audiencias.
           </p>
           <p className="mt-4">
-            Envision a system where audiences can invest in growing ventures much like they invest in startups. A growing venture could set the terms from the outset—for instance, offering $100,000 USDC for 5% of their revenue as a singer. All these terms would be encoded in a smart contract. This approach would not only provide clear, upfront conditions but also ensure transparency and enforceability through blockchain technology. It's a revolutionary way to support creative work, giving both growing ventures and their supporters more security and mutual benefit.
-          </p>
-
-          <h2 className="text-2xl font-semibold mt-6">Our Future</h2>
-          <p className="mt-4">
-            In this envisioned world, growing ventures have complete ownership of their relationships with their audiences, and anyone interested in investing in creativity can do so. This creates a dynamic where having a compelling idea and the passion to pursue it can realistically be turned into a sustainable livelihood. It democratizes the creative economy, allowing more individuals to thrive from their artistic endeavors and innovations, supported directly by those who value and believe in their work.
+            Imagina un sistema donde las audiencias pueden invertir en emprendimientos en crecimiento como invierten en startups. Un emprendimiento en crecimiento podría establecer los términos desde el principio, por ejemplo, ofreciendo $100,000 USDC por el 5% de sus ingresos como cantante. Todos estos términos se codificarían en un contrato inteligente. Este enfoque no solo proporcionaría condiciones claras y transparentes desde el principio, sino que también garantizaría la transparencia y ejecutabilidad a través de la tecnología blockchain. Es una manera revolucionaria de apoyar el trabajo creativo, brindando a los emprendimientos en crecimiento y sus seguidores más seguridad y beneficios mutuos.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6">Pioneering Innovation</h2>
+          <h2 className="text-2xl font-semibold mt-6">Nuestro Futuro</h2>
           <p className="mt-4">
-            We have pioneered a seamless transition from Web2 to Web3, ensuring users experience the benefits of blockchain technology without the usual friction. By leveraging the ERC-4337 protocol (Smart Wallets), we have created an easy-to-use platform that integrates seamlessly with major social media accounts, enhancing accessibility and user engagement.
+            En este mundo imaginado, los emprendimientos en crecimiento tienen completa propiedad de sus relaciones con sus audiencias, y cualquier persona interesada en invertir en creatividad puede hacerlo. Esto crea una dinámica donde tener una idea convincente y la pasión por perseguirla puede convertirse realísticamente en un medio de vida sostenible. Democratiza la economía creativa, permitiendo que más individuos prosperen a partir de sus esfuerzos artísticos e innovaciones, apoyados directamente por aquellos que valoran y creen en su trabajo.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6">Leadership</h2>
+          <h2 className="text-2xl font-semibold mt-6">Innovación Pionera</h2>
           <p className="mt-4">
-            Pablo, the current CEO, wrote his first line of code in 1984 and pioneered the creation of the first web page for a financial institution in Latin America. Olga, the COO, led the Colombian team at WorldSkills Abu Dhabi 2017, achieving notable success with eight medals of excellence, including three in technology categories.
+            Hemos sido pioneros en una transición sin problemas de Web2 a Web3, asegurando que los usuarios experimenten los beneficios de la tecnología blockchain sin la fricción habitual. Al aprovechar el protocolo ERC-4337 (Smart Wallets), hemos creado una plataforma fácil de usar que se integra sin problemas con las principales cuentas de redes sociales, mejorando la accesibilidad y el compromiso del usuario.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6">Vision and Execution</h2>
+          <h2 className="text-2xl font-semibold mt-6">Liderazgo</h2>
           <p className="mt-4">
-            Our vision is to shift the economic dynamics in favor of growing ventures, enabling them to fully capitalize on their relationships with their audiences. We are committed to providing the tools and infrastructure necessary to support this new era of the growing venture economy.
+            Pablo, el actual CEO, escribió su primera línea de código en 1984 y fue pionero en la creación de la primera página web para una institución financiera en América Latina. Olga, la COO, lideró al equipo colombiano en WorldSkills Abu Dhabi 2017, logrando un notable éxito con ocho medallas de excelencia, incluidas tres en categorías de tecnología.
           </p>
-          <h2 className="text-2xl font-semibold mt-6">Problem</h2>
+
+          <h2 className="text-2xl font-semibold mt-6">Visión y Ejecución</h2>
           <p className="mt-4">
-            **Growing ventures are hindered by platform dependency, which dilutes earnings and fragments audience engagement, limiting direct and sustainable financial relationships.**
+            Nuestra visión es cambiar la dinámica económica a favor de los emprendimientos en crecimiento, permitiéndoles capitalizar completamente sus relaciones con sus audiencias. Estamos comprometidos a proporcionar las herramientas e infraestructura necesarias para apoyar esta nueva era de la economía de los emprendimientos en crecimiento.
+          </p>
+
+          <h2 className="text-2xl font-semibold mt-6">Problema</h2>
+          <p className="mt-4">
+            **Los emprendimientos en crecimiento están obstaculizados por la dependencia de las plataformas, lo que diluye las ganancias y fragmenta el compromiso de la audiencia, limitando las relaciones financieras directas y sostenibles.**
           </p>
           <p className="mt-4">
-            Despite the transformative potential of digital platforms, growing ventures today face significant barriers in monetizing their relationships directly with their audiences. The current ecosystem overwhelmingly relies on intermediary platforms, which not only extract a substantial portion of the revenue but also control the critical data and engagement metrics that growing ventures need to foster and monetize their communities effectively. This dependency results in a diluted earning potential for growing ventures and a fragmented audience experience, where engagement is platform-centric rather than growing venture-focused. As a result, growing ventures are unable to establish a sustainable and direct financial relationship with their followers, which is essential for long-term success and independence.
+            A pesar del potencial transformador de las plataformas digitales, los emprendimientos en crecimiento hoy enfrentan barreras significativas para monetizar sus relaciones directamente con sus audiencias. El ecosistema actual depende abrumadoramente de plataformas intermediarias, que no solo extraen una porción sustancial de los ingresos, sino que también controlan los datos y métricas de compromiso críticos que los emprendimientos en crecimiento necesitan para fomentar y monetizar sus comunidades de manera efectiva. Esta dependencia resulta en un potencial de ganancias diluido para los emprendimientos en crecimiento y una experiencia fragmentada para la audiencia, donde el compromiso es centrado en la plataforma en lugar de enfocado en el emprendimiento. Como resultado, los emprendimientos en crecimiento no pueden establecer una relación financiera directa y sostenible con sus seguidores, lo cual es esencial para el éxito a largo plazo y la independencia.
           </p>
           
-          <h2 className="text-2xl font-semibold mt-6">Solution</h2>
+          <h2 className="text-2xl font-semibold mt-6">Solución</h2>
           <p className="mt-4">
-            Imagine a future where growing ventures fully own their relationships with their audience, free from platform constraints, and supported by direct, transparent financial interactions. Our solution leverages the power of Web3 and smart contracts to introduce a Token Membership system, which operates seamlessly across all major platforms. This model not only empowers growing ventures with the autonomy to set their own terms but also enables audiences to invest directly in the creativity they believe in, transforming every follower into a potential stakeholder. Together, we’re building a new economic framework where growing ventures flourish and communities thrive, all underpinned by security, transparency, and mutual growth.
+            Imagina un futuro donde los emprendimientos en crecimiento poseen completamente sus relaciones con su audiencia, libres de restricciones de plataforma, y apoyados por interacciones financieras directas y transparentes. Nuestra solución aprovecha el poder de Web3 y los contratos inteligentes para introducir un sistema de Membresía Token, que opera sin problemas en todas las principales plataformas. Este modelo no solo empodera a los emprendimientos en crecimiento con la autonomía para establecer sus propios términos, sino que también permite a las audiencias invertir directamente en la creatividad en la que creen, transformando a cada seguidor en un potencial accionista. Juntos, estamos construyendo un nuevo marco económico donde los emprendimientos en crecimiento prosperan y las comunidades prosperan, todo respaldado por seguridad, transparencia y crecimiento mutuo.
           </p>
           <p className="mt-4">
-            **Token Membership System:** Implement a decentralized subscription model where growing ventures and fans engage through a "Token Membership." This model operates independently of any specific platform, allowing growing ventures to maintain direct and continuous relationships with their audiences across multiple platforms like Instagram, X (formerly Twitter), YouTube, and Facebook.
+            **Sistema de Membresía Token:** Implementar un modelo de suscripción descentralizado donde los emprendimientos en crecimiento y los fans se relacionan a través de una "Membresía Token." Este modelo opera independientemente de cualquier plataforma específica, permitiendo que los emprendimientos en crecimiento mantengan relaciones directas y continuas con sus audiencias en múltiples plataformas como Instagram, X (anteriormente Twitter), YouTube y Facebook.
           </p>
           <p className="mt-4">
-            **Smart Contract Terms:** Growing ventures can set explicit terms for financial interactions, such as offering a percentage of their revenue in exchange for upfront investment (e.g., $100,000 USDC for 5% of future revenue as a singer). These terms are encoded in smart contracts, ensuring clarity, transparency, and enforceability through blockchain technology.
+            **Términos de Contrato Inteligente:** Los emprendimientos en crecimiento pueden establecer términos explícitos para las interacciones financieras, como ofrecer un porcentaje de sus ingresos a cambio de una inversión inicial (por ejemplo, $100,000 USDC por el 5% de los ingresos futuros como cantante). Estos términos se codifican en contratos inteligentes, asegurando claridad, transparencia y ejecutabilidad a través de la tecnología blockchain.
           </p>
           <p className="mt-4">
-            **Cross-Platform Integration:** Despite the decentralized nature of the Token Membership, the model is designed to function seamlessly across all major social media platforms, which agree to honor these blockchain-based agreements. This ensures that growing ventures can reach their audiences wherever they are, without platform restrictions or discrepancies in terms and conditions.
+            **Integración Multi-Plataforma:** A pesar de la naturaleza descentralizada de la Membresía Token, el modelo está diseñado para funcionar sin problemas en todas las principales plataformas de redes sociales, que acuerdan honrar estos acuerdos basados en blockchain. Esto asegura que los emprendimientos en crecimiento puedan llegar a sus audiencias dondequiera que estén, sin restricciones de plataforma ni discrepancias en términos y condiciones.
           </p>
           <p className="mt-4">
-            **Direct Investment in Creativity:** Audiences can directly invest in growing ventures, not unlike investing in startups, which fosters a more direct and financially supportive relationship between growing ventures and their communities. This system not only empowers growing ventures financially but also enhances their creative freedom and stability.
-          </p>
-
-          <h2 className="text-2xl font-semibold mt-6">Market Opportunity in the Growing Venture Economy</h2>
-          <p className="mt-4">
-            **Rapid Increase in User Engagement:** User tipping jumped from 17% in 2021 to over 40% in 2023, with average tips between $5 and $10, highlighting a shift towards direct financial support from fans to growing ventures.
-          </p>
-          <p className="mt-4">
-            **Expansive Growth:** The growing venture economy has surged by 314% since 2021, now including 200 million content creators globally who are utilizing advanced tools for growth and monetization.
-          </p>
-          <p className="mt-4">
-            **Fan Participation:** Fans are increasingly proactive, wanting to engage more actively and invest in the growing ventures they support, reflecting a deeper economic and emotional investment in the growing venture economy.
-          </p>
-          <p className="mt-4">
-            **Potential of Web3:** Web3 technologies facilitate a move towards the tokenization of people, brands, and content, driving a fully decentralized model that empowers growing ventures and fans alike.
+            **Inversión Directa en Creatividad:** Las audiencias pueden invertir directamente en los emprendimientos en crecimiento, de manera similar a cómo invierten en startups, lo que fomenta una relación más directa y de apoyo financiero entre los emprendimientos en crecimiento y sus comunidades. Este sistema no solo empodera financieramente a los emprendimientos en crecimiento, sino que también mejora su libertad creativa y estabilidad.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6">Competitive Landscape</h2>
+          <h2 className="text-2xl font-semibold mt-6">Oportunidad de Mercado en la Economía de los Emprendimientos en Crecimiento</h2>
           <p className="mt-4">
-            **Beyond Traditional Models:** Unlike traditional subscription platforms that simply manage payments and provide space while taking a cut, our platform ensures growing ventures truly own their communities through direct connections.
+            **Aumento Rápido en el Compromiso de los Usuarios:** Las propinas de los usuarios saltaron del 17% en 2021 a más del 40% en 2023, con propinas promedio entre $5 y $10, destacando un cambio hacia el apoyo financiero directo de los fans a los emprendimientos en crecimiento.
           </p>
           <p className="mt-4">
-            **Reducing Friction:** While many Web3 social finance platforms introduce complexity that deters everyday users, our system minimizes friction, making it accessible and user-friendly.
+            **Crecimiento Expansivo:** La economía de los emprendimientos en crecimiento ha aumentado un 314% desde 2021, incluyendo ahora a 200 millones de creadores de contenido a nivel mundial que utilizan herramientas avanzadas para el crecimiento y la monetización.
           </p>
           <p className="mt-4">
-            **Token-Based Compensation:** Our unique token-based system revolutionizes how growing ventures are compensated, allowing direct and transparent financial interactions between growing ventures and their communities.
+            **Participación de los Fans:** Los fans son cada vez más proactivos, queriendo participar más activamente e invertir en los emprendimientos en crecimiento que apoyan, reflejando una inversión económica y emocional más profunda en la economía de los emprendimientos en crecimiento.
           </p>
           <p className="mt-4">
-            **Platform Agnostic:** Our model works independently of content distribution platforms, ensuring growing ventures can engage with their audience wherever they are, without being tied to any single service.
-          </p>
-          <p className="mt-4">
-            **Focus on Adoption:** Our main focus is driving widespread adoption of our token model, benefiting individual growing ventures and the entire community, without directly competing with existing social platforms.
+            **Potencial de Web3:** Las tecnologías Web3 facilitan un movimiento hacia la tokenización de personas, marcas y contenido, impulsando un modelo completamente descentralizado que empodera tanto a los emprendimientos en crecimiento como a los fans.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6">Growing Venture Token Utility</h2>
+          <h2 className="text-2xl font-semibold mt-6">Paisaje Competitivo</h2>
           <p className="mt-4">
-            **Personalized Tokens:** Each growing venture issues their own transactional token, minted through staking on exclusive content, enhancing direct engagement and reward mechanisms.
+            **Más Allá de los Modelos Tradicionales:** A diferencia de las plataformas de suscripción tradicionales que simplemente gestionan los pagos y proporcionan espacio mientras se llevan una parte, nuestra plataforma asegura que los emprendimientos en crecimiento realmente posean sus comunidades a través de conexiones directas.
           </p>
           <p className="mt-4">
-            **Versatile Usage:** Tokens can be used by fans to purchase exclusive content, merchandise, concert tickets, and more—the possibilities are only limited by the growing venture’s imagination.
+            **Reducción de Fricciones:** Mientras muchas plataformas de finanzas sociales Web3 introducen complejidad que disuade a los usuarios cotidianos, nuestro sistema minimiza las fricciones, haciéndolo accesible y fácil de usar.
           </p>
           <p className="mt-4">
-            **Token Exchange:** Community members can exchange these growing venture-specific tokens for a liquid network token, like USDC, providing flexibility and value realization.
+            **Compensación Basada en Tokens:** Nuestro sistema único basado en tokens revoluciona la forma en que los emprendimientos en crecimiento son compensados, permitiendo interacciones financieras directas y transparentes entre los emprendimientos en crecimiento y sus comunidades.
           </p>
           <p className="mt-4">
-            **Reward Cycle:** Growing ventures can exchange collected USDC and opt to burn tokens to share their success with the community, aligning growing venture and community interests through transparent financial interactions.
+            **Independiente de la Plataforma:** Nuestro modelo funciona independientemente de las plataformas de distribución de contenido, asegurando que los emprendimientos en crecimiento puedan interactuar con su audiencia dondequiera que estén, sin estar atados a ningún servicio en particular.
+          </p>
+          <p className="mt-4">
+            **Enfoque en la Adopción:** Nuestro principal enfoque es impulsar la adopción generalizada de nuestro modelo de tokens, beneficiando a los emprendimientos en crecimiento individuales y a toda la comunidad, sin competir directamente con las plataformas sociales existentes.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6">Token Sale and Strategy</h2>
+          <h2 className="text-2xl font-semibold mt-6">Utilidad del Token para Emprendimientos en Crecimiento</h2>
           <p className="mt-4">
-            **Initial Token Sale:** Launch a preliminary token sale to raise funds and build community interest, ensuring a strong start for platform engagement.
+            **Tokens Personalizados:** Cada emprendimiento en crecimiento emite su propio token transaccional, acuñado a través de staking en contenido exclusivo, mejorando los mecanismos de compromiso y recompensa directa.
           </p>
           <p className="mt-4">
-            **Vesting Periods:** Implement vesting periods for team members and advisors to align their interests with the long-term success and growth of the project.
+            **Uso Versátil:** Los tokens pueden ser utilizados por los fans para comprar contenido exclusivo, mercancía, entradas para conciertos y más; las posibilidades están limitadas solo por la imaginación del emprendimiento en crecimiento.
           </p>
           <p className="mt-4">
-            **Utility First Approach:** Prioritize establishing real, tangible utility for our tokens within the platform before initiating any major token sales.
+            **Intercambio de Tokens:** Los miembros de la comunidad pueden intercambiar estos tokens específicos de los emprendimientos en crecimiento por un token de red líquido, como USDC, proporcionando flexibilidad y realización de valor.
           </p>
           <p className="mt-4">
-            **Token Exchange Post-Vesting:** After the vesting periods, tokens will become exchangeable for growing venture-specific tokens, facilitating broader utility and integration within our ecosystem.
+            **Ciclo de Recompensa:** Los emprendimientos en crecimiento pueden intercambiar USDC recolectado y optar por quemar tokens para compartir su éxito con la comunidad, alineando los intereses del emprendimiento en crecimiento y la comunidad a través de interacciones financieras transparentes.
+          </p>
+
+          <h2 className="text-2xl font-semibold mt-6">Venta de Tokens y Estrategia</h2>
+          <p className="mt-4">
+            **Venta Inicial de Tokens:** Lanzar una venta preliminar de tokens para recaudar fondos y generar interés comunitario, asegurando un fuerte comienzo para el compromiso con la plataforma.
+          </p>
+          <p className="mt-4">
+            **Períodos de Consolidación:** Implementar períodos de consolidación para los miembros del equipo y asesores para alinear sus intereses con el éxito y crecimiento a largo plazo del proyecto.
+          </p>
+          <p className="mt-4">
+            **Enfoque en la Utilidad:** Priorizar el establecimiento de una utilidad real y tangible para nuestros tokens dentro de la plataforma antes de iniciar cualquier venta importante de tokens.
+          </p>
+          <p className="mt-4">
+            **Intercambio de Tokens Post-Consolidación:** Después de los períodos de consolidación, los tokens serán intercambiables por tokens específicos de los emprendimientos en crecimiento, facilitando una mayor utilidad e integración dentro de nuestro ecosistema.
           </p>
         </div>
       <Footer />

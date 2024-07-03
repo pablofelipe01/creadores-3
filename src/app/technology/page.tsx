@@ -15,28 +15,10 @@ const Technology = () => {
       <main className="relative py-16 px-4 flex-grow pt-40">
         <div className="bg-gray-900 bg-opacity-80 p-8 rounded-lg text-white">
           <h1 className="text-4xl font-bold mb-4 text-center">Bidirectional Tokenization Model (BTM)</h1>
-          <section className="mb-8">
-            <h2 className="text-3xl font-semibold mb-4">The Problem</h2>
-            <p className="mb-4">Crypto tokens became the worst part of the problem they sought to solve. "A Peer-to-Peer Electronic Cash System" *1 Why?</p>
-            <ol className="list-decimal list-inside mb-4">
-              <li className="mb-2">
-                <strong>Usefulness:</strong> Most tokens don't answer the question, what is the token for? In general, they are issued to obtain resources, and this response does not work because the tokens become a kind of security or unregulated commodity, risky for both the issuer and the buyer. *2
-              </li>
-              <li className="mb-2">
-                <strong>Volatility, Speculation, and Liquidity:</strong> Crypto Tokens are traded on a CEX (Centralized Exchange) where liquidity is not transparent or decentralized and the price is usually tied to everything that happens on the CEX (FTX can be cited as an example). The other way to trade Crypto Tokens is on a DEX (Decentralized Exchange); here, liquidity is transparent and decentralized, but always depends on a third party, and this creates two problems:
-                <ul className="list-disc list-inside ml-6">
-                  <li>Normally the liquidity in the DEX does not represent the totality of the tokens issued.</li>
-                  <li>The liquidity provider is unknown, and therefore the conflicts of interest that it may have with the token, so the price of a token is often synthetically inflated and then liquidity disappears.</li>
-                </ul>
-              </li>
-              <li className="mb-2">
-                <strong>Network Usage:</strong> The Blockchain is an immutable network of transactional registration and not of securities registration. *3
-              </li>
-            </ol>
-          </section>
+       
 
           <section className="mb-8">
-            <h2 className="text-3xl font-semibold mb-4">Our Solution</h2>
+            {/* <h2 className="text-3xl font-semibold mb-4">Solution</h2> */}
             <p className="mb-4">BTMs (Bidirectional Tokenization Model) are interchangeable assets linked to a brand, a company, a content creator, or any type of community with aligned incentives. They are custom assets that allow their holders to unlock interactions, specific experiences or simply invest in their favorite brands or people.</p>
             <p className="mb-4">BTMs exemplify the main spirit of how intermediaries should not be a necessary condition for value transfer. BTMs are a pathway to financial and creative independence for both brands and their community.</p>
             <p className="mb-4">The success of any brand or value creator comes from fostering growth of their community. With a BTM, as their community grows, a thriving economy is formed that rewards both the value creator and their community.</p>

@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { FaInstagram, FaTwitter, FaTiktok, FaLinkedin, FaRegEnvelope, FaGithub } from 'react-icons/fa';
+import { FaInstagram, FaTwitter, FaLinkedin, FaRegEnvelope, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -20,27 +20,24 @@ const Footer = () => {
           <a href="https://twitter.com/tokensolutions" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-500 transition-colors">
             <FaTwitter className="w-6 h-6" />
           </a>
-          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-500 transition-colors">
-            <FaTiktok className="w-6 h-6" />
-          </a>
+          
           <a href="mailto:pablo@toksol.io" className="text-gray-400 hover:text-green-500 transition-colors">
             <FaRegEnvelope className="w-6 h-6" />
           </a>
         </div>
         <div className="flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-4 text-gray-400 text-center">
-          <a href="/about" className="hover:text-green-500 transition-colors">About</a>
-          <a href="/team" className="hover:text-green-500 transition-colors">Team</a>
-          <a href="/tutorials" className="hover:text-green-500 transition-colors">Tutorials</a>
-          <a href="/technology" className="hover:text-green-500 transition-colors">Technology</a>
+          <a href="/about" className="hover:text-green-500 transition-colors">Nosotros</a>
+          <a href="/team" className="hover:text-green-500 transition-colors">Equipo</a>
+          <a href="/tutorials" className="hover:text-green-500 transition-colors">Tutoriales</a>
+          <a href="/technology" className="hover:text-green-500 transition-colors">Tecnología</a>
           <a href="/blog" className="hover:text-green-500 transition-colors">Blog</a>
-          <a href="/disclosure" className="hover:text-green-500 transition-colors">Disclosure</a>
-          <a href="/terms" className="hover:text-green-500 transition-colors">Terms of Service</a>
-          <a href="/privacy" className="hover:text-green-500 transition-colors">Privacy Policy</a>
-          <a href="/pricing" className="hover:text-green-500 transition-colors">Pricing</a>
-          <a href="/press" className="hover:text-green-500 transition-colors">Press</a>
+          <a href="/disclosure" className="hover:text-green-500 transition-colors">Legal</a>
+          <a href="/terms" className="hover:text-green-500 transition-colors">Términos</a>
+          <a href="/privacy" className="hover:text-green-500 transition-colors">Privacidad</a>
+          {/* <a href="/press" className="hover:text-green-500 transition-colors">Prensa</a> */}
         </div>
         <div className="text-center text-gray-500 text-sm mt-4">
-          © {new Date().getFullYear()} True Social Token. All rights reserved.
+          © {new Date().getFullYear()} True Social Token. Todos los derechos reservados.
         </div>
       </div>
     </footer>

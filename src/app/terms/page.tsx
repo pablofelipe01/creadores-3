@@ -11,33 +11,33 @@ const Terms = () => {
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <NavBar />
       <main className="relative py-16 px-4 flex-grow pt-40 container mx-auto">
-        <h1 className="text-4xl font-bold text-white mb-6 text-center">Terms of Service for True Social Token</h1>
+        <h1 className="text-4xl font-bold text-white mb-6 text-center">Términos de Servicio de True Social Token</h1>
         <div className="bg-transparent border border-blue-500 p-6 rounded-lg text-white">
-          <p>Welcome to True Social Token! By using True Social Token, you agree to these terms, which create a binding legal agreement between you and True Social Token, Inc. These terms apply to all users of the True Social Token platform and its services, including our website, Web3 applications, APIs, and other digital services.</p>
+          <p>¡Bienvenido a True Social Token! Al usar True Social Token, aceptas estos términos, que crean un acuerdo legal vinculante entre tú y True Social Token, Inc. Estos términos se aplican a todos los usuarios de la plataforma True Social Token y sus servicios, incluyendo nuestro sitio web, aplicaciones Web3, API y otros servicios digitales.</p>
           
-          <h2 className="text-2xl font-semibold mt-6">Your Account</h2>
-          <p>You must be at least 13 years old to use True Social Token. By creating an account, you confirm that you are at least 13 years old and that you are responsible for your account’s activities. You must provide accurate information and keep this information up to date. To create or use an account on True Social Token, you must also be old enough to consent to the processing of your personal data in your jurisdiction or have permission from your parent or guardian if required.</p>
+          <h2 className="text-2xl font-semibold mt-6">Tu Cuenta</h2>
+          <p>Debes tener al menos 13 años para usar True Social Token. Al crear una cuenta, confirmas que tienes al menos 13 años y que eres responsable de las actividades de tu cuenta. Debes proporcionar información precisa y mantener esta información actualizada. Para crear o usar una cuenta en True Social Token, también debes tener la edad suficiente para dar tu consentimiento para el procesamiento de tus datos personales en tu jurisdicción o tener permiso de tu padre o tutor si es necesario.</p>
           
-          <h2 className="text-2xl font-semibold mt-6">Content and Creations</h2>
-          <p>As a growing venture on True Social Token, you may establish a growing venture page to engage with users who support your digital content through subscriptions or one-time purchases. You retain ownership of the content you post, subject to our platform’s right to use and display your content as part of our services.</p>
+          <h2 className="text-2xl font-semibold mt-6">Contenido y Creaciones</h2>
+          <p>Como un emprendimiento en crecimiento en True Social Token, puedes establecer una página de emprendimiento en crecimiento para interactuar con usuarios que apoyan tu contenido digital a través de suscripciones o compras únicas. Conservas la propiedad del contenido que publicas, sujeto al derecho de nuestra plataforma de usar y mostrar tu contenido como parte de nuestros servicios.</p>
           
-          <h2 className="text-2xl font-semibold mt-6">Payments and Subscriptions</h2>
-          <p>Growing ventures may offer their content on a one-time or subscription basis. Prices may be displayed in the user's local currency and adjusted for blockchain transaction fees as determined by the network and True Social Token’s discretion. Growing ventures are responsible for complying with tax regulations and for setting realistic expectations within their offerings.</p>
+          <h2 className="text-2xl font-semibold mt-6">Pagos y Suscripciones</h2>
+          <p>Los emprendimientos en crecimiento pueden ofrecer su contenido de manera única o por suscripción. Los precios pueden mostrarse en la moneda local del usuario y ajustarse por las tarifas de transacción de blockchain según lo determine la red y a discreción de True Social Token. Los emprendimientos en crecimiento son responsables de cumplir con las regulaciones fiscales y de establecer expectativas realistas dentro de sus ofertas.</p>
           
-          <h2 className="text-2xl font-semibold mt-6">Intellectual Property</h2>
-          <p>Growing ventures are responsible for ensuring they have all the necessary rights to the content they upload to True Social Token. The platform respects intellectual property laws and expects the same from its users.</p>
+          <h2 className="text-2xl font-semibold mt-6">Propiedad Intelectual</h2>
+          <p>Los emprendimientos en crecimiento son responsables de asegurarse de tener todos los derechos necesarios para el contenido que suben a True Social Token. La plataforma respeta las leyes de propiedad intelectual y espera lo mismo de sus usuarios.</p>
           
-          <h2 className="text-2xl font-semibold mt-6">Prohibited Conduct</h2>
-          <p>Users must not engage in illegal activities, abuse the platform’s technical infrastructure, or conduct themselves in a manner that could be deemed as abusive or harmful to other users or the platform.</p>
+          <h2 className="text-2xl font-semibold mt-6">Conducta Prohibida</h2>
+          <p>Los usuarios no deben participar en actividades ilegales, abusar de la infraestructura técnica de la plataforma o comportarse de manera que pueda considerarse abusiva o dañina para otros usuarios o la plataforma.</p>
           
-          <h2 className="text-2xl font-semibold mt-6">Termination and Suspension</h2>
-          <p>True Social Token reserves the right to suspend or terminate accounts that violate these terms or engage in activities harmful to the platform or its users.</p>
+          <h2 className="text-2xl font-semibold mt-6">Terminación y Suspensión</h2>
+          <p>True Social Token se reserva el derecho de suspender o terminar cuentas que violen estos términos o participen en actividades perjudiciales para la plataforma o sus usuarios.</p>
           
-          <h2 className="text-2xl font-semibold mt-6">Changes to Terms</h2>
-          <p>We may modify these terms at any time. We will notify users of any material changes through our platform interfaces or via email.</p>
+          <h2 className="text-2xl font-semibold mt-6">Cambios en los Términos</h2>
+          <p>Podemos modificar estos términos en cualquier momento. Notificaremos a los usuarios sobre cualquier cambio material a través de las interfaces de nuestra plataforma o por correo electrónico.</p>
           
-          <h2 className="text-2xl font-semibold mt-6">Contact Us</h2>
-          <p>If you have any questions or concerns about these terms or our services, please contact us at pablo@toksol.io.</p>
+          <h2 className="text-2xl font-semibold mt-6">Contáctanos</h2>
+          <p>Si tienes alguna pregunta o inquietud sobre estos términos o nuestros servicios, por favor contáctanos en pablo@toksol.io.</p>
         </div>
       <Footer />
       </main>

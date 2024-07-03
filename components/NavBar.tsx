@@ -25,7 +25,7 @@ export const NavBar = () => {
             <a className="flex items-center">
               <img 
                 src="/images/2.png" 
-                alt="MyApp Logo" 
+                alt="Logo de MiApp" 
                 className="h-14 w-30 object-cover"
               />
             </a>
@@ -47,12 +47,12 @@ export const NavBar = () => {
               onClick={handleGlobalClick}
               className="focus:outline-none bg-blue-600 text-white py-1 px-3 rounded-lg hover:bg-blue-500 transition-colors"
             >
-              Buy Matic
+              Recargar billetera
             </button>
           </div>
           <Link href="/pricing" legacyBehavior>
             <a className="hidden md:block focus:outline-none bg-green-600 text-white py-1 px-3 rounded-lg hover:bg-green-500 transition-colors">
-              Pricing
+              Precios
             </a>
           </Link>
           
@@ -60,7 +60,7 @@ export const NavBar = () => {
             client={client} 
             chain={chain} 
             theme={"dark"}
-            connectButton={{ label: "Connect" }}
+            connectButton={{ label: "Conectar" }}
             connectModal={{ 
               size: "compact", 
               showThirdwebBranding: false, 
@@ -80,7 +80,7 @@ export const NavBar = () => {
         {menuOpen && (
           <div className="absolute top-16 left-0 w-full bg-white bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-50 p-4 shadow-md z-40">
             <div className="flex justify-between items-center mb-4">
-              <h2 className="text-xl font-bold text-gray-800 dark:text-gray-200">Menu</h2>
+              <h2 className="text-xl font-bold text-gray-800 dark:text-gray-200">Menú</h2>
               <button 
                 className="focus:outline-none"
                 onClick={() => setMenuOpen(false)}
@@ -91,7 +91,7 @@ export const NavBar = () => {
               </button>
             </div>
             <Link href="/" legacyBehavior>
-              <a className="block text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100 transition-colors mb-2">Home</a>
+              <a className="block text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100 transition-colors mb-2">Inicio</a>
             </Link>
             <button 
               onClick={handleGlobalClick}
@@ -101,12 +101,12 @@ export const NavBar = () => {
             </button>
             <Link href="/pricing" legacyBehavior>
               <a className="block text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100 transition-colors mb-2">
-                Pricing
+                Precios
               </a>
             </Link>
             <Link href="/creators-balances" legacyBehavior>
               <a className="block text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100 transition-colors mb-2">
-                Creators' Balances
+                Saldos de Creadores
               </a>
             </Link>
           </div>
@@ -122,7 +122,7 @@ export const NavBar = () => {
             onClick={() => setShowIframe(false)}
             className="absolute top-2 right-2 bg-gray-800 text-white py-2 px-5 rounded-lg cursor-pointer transition-colors hover:bg-red-500"
           >
-            Close
+            Cerrar
           </button>
         </div>
       )}

@@ -28,6 +28,12 @@ const teamMembers = [
     linkedinUrl: 'https://www.linkedin.com/in/angela-maria-acosta-a99687a1/',
     imgUrl: '/images/mona.png',
   },
+  {
+    name: 'Yesika',
+    position: 'Partner',
+    linkedinUrl: 'https://www.linkedin.com/in/yesika-padilla-91036653/',
+    imgUrl: '/images/yesi.png',
+  },
   // Add more team members as needed
 ];
 
