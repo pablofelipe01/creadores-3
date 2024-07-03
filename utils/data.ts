@@ -21,6 +21,28 @@ export type StakingData = {
 export const stakingData: StakingData[] = [
   // @ts-ignore
   {
+    creatorName: "Gordito Fitt",
+    description: "Como Baje 40 kilos de gordo a fit",
+    imgUrl: "/images/fit.png",
+    tokenSymbol: "GF",
+    tokenPrice: "1 MATIC",
+    liquidityImgUrl: "/images/matic.png", // Image URL for liquidity
+    nftContractAddress: "0xc1Db4038de013D5653A710EFb97678fD46837A52",
+    rewardTokenContractAddress: "0x40798ad1280a8d323aA80E814B2Cbe0d4Ff6d36e",
+    stakingContractAddress: "0x7c1e3Aff7D1579051C9aACFa024f74d5D9B3bFd1",
+    buyLink: "https://payments.thirdweb.com/checkout/2c6d3822-c285-4afc-bcb7-5ed95a06eb3c",
+    sellLink: "https://dexscreener.com/polygon/0x48d411A641153C03245E0aaA3da315Ed198aF95b?embed=1&theme=dark",
+    socialMedia: [
+      { platform: "Instagram", url: "https://www.instagram.com/elgorditofitofficial/", followers: 12000 },
+      { platform: "X", url: "https://twitter.com", followers: 6500 },
+      { platform: "TikTok", url: "https://www.tiktok.com/@elgorditofit?lang=en", followers: 26000 },
+    ],
+    infoImgUrl: "/images/fit2.png",
+    exclusiveContentLink: "https://app.darkblock.io/platform/matic/embed/collection/0xc1Db4038de013D5653A710EFb97678fD46837A52",
+    pdfUrl: "/pdfs/fit-1.pdf",
+  },
+  // @ts-ignore
+  {
     creatorName: "Manuela Villegas",
     description: "Full Stack Marketer | CEO @SI SEÑOR MARTECH | TOP VOICE LINKEDIN | Women to Watch | Host TED Circle",
     imgUrl: "/images/manu2.png",
@@ -41,28 +63,8 @@ export const stakingData: StakingData[] = [
     exclusiveContentLink: "https://example.com/exclusive-manu",
     pdfUrl: "/pdfs/Manuela_Villegas.pdf",
   },
-  // @ts-ignore
-  {
-    creatorName: "Gordito Fitt",
-    description: "Como Baje 40 kilos de gordo a fit",
-    imgUrl: "/images/fit.png",
-    tokenSymbol: "GF",
-    tokenPrice: "1 MATIC",
-    liquidityImgUrl: "/images/matic.png", // Image URL for liquidity
-    nftContractAddress: "0xc1Db4038de013D5653A710EFb97678fD46837A52",
-    rewardTokenContractAddress: "0x40798ad1280a8d323aA80E814B2Cbe0d4Ff6d36e",
-    stakingContractAddress: "0x7c1e3Aff7D1579051C9aACFa024f74d5D9B3bFd1",
-    buyLink: "https://payments.thirdweb.com/checkout/2c6d3822-c285-4afc-bcb7-5ed95a06eb3c",
-    sellLink: "https://fit-dex.vercel.app/",
-    socialMedia: [
-      { platform: "Instagram", url: "https://www.instagram.com/elgorditofitofficial/", followers: 12000 },
-      { platform: "X", url: "https://twitter.com", followers: 6500 },
-      { platform: "TikTok", url: "https://www.tiktok.com/@elgorditofit?lang=en", followers: 26000 },
-    ],
-    infoImgUrl: "/images/fit2.png",
-    exclusiveContentLink: "https://app.darkblock.io/platform/matic/embed/collection/0xc1Db4038de013D5653A710EFb97678fD46837A52",
-    pdfUrl: "/pdfs/fit-1.pdf",
-  },
+  
+  
   // @ts-ignore
   {
     creatorName: "Xportiva",

@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import PlanCard from '../../../components/PlanCard'; // Ruta correcta a PlanCard
+import PlanCard from '../../../components/PlanCard'; // Correct path to PlanCard
 import { NavBar } from '../../../components/NavBar';
 import Footer from '../../../components/Footer';
 
@@ -9,30 +9,30 @@ const Pricing = () => {
     const [iframeSrc, setIframeSrc] = useState('');
     const [showIframe, setShowIframe] = useState(false);
 
-    const planes = [
+    const plans = [
         {
-            title: "Plan Premium",
+            title: "Premium Plan",
             features: [
-                "Integración de Token y Tecnología",
-                "Acceso al Motor Blockchain",
-                "Fábrica de Billeteras",
-                "Desarrollo de Contratos Inteligentes",
-                "Tutoriales Avanzados",
-                "Marcos Web3 Extendidos"
+                "Token and Technology Integration",
+                "Blockchain Engine Access",
+                "Wallet Factory",
+                "Smart Contracts Development",
+                "Advanced Tutorials",
+                "Extended Web3 Frameworks"
             ],
-            price: "$9.99/mes",
+            price: "$9.99/month",
             url: "https://app.unlock-protocol.com/checkout?id=11f43d6e-4912-479a-9470-32196d0395b5"
         },
         {
-            title: "Plan Agencia",
+            title: "Agency Plan",
             features: [
-                "Soluciones Blockchain Personalizadas",
-                "Integración Completa de Billeteras",
-                "Contratos Inteligentes Personalizados",
-                "Tutoriales Personalizados",
-                "Marcos Web3 Comprensivos"
+                "Custom Blockchain Solutions",
+                "Full Wallet Integration",
+                "Custom Smart Contracts",
+                "Personalized Tutorials",
+                "Comprehensive Web3 Frameworks"
             ],
-            price: "próximamente",
+            price: "coming soon",
             url: "http://example.com/agency"
         }
     ];
@@ -50,18 +50,18 @@ const Pricing = () => {
             <div className="absolute inset-0 bg-black opacity-50"></div>
             <NavBar />
             <main className="relative py-16 px-4 flex-grow pt-40">
-                <h1 className="text-4xl font-bold text-white mb-10 text-center">Planes de Precios para Creadores</h1>
-                <p className="text-center text-sm text-gray-300 mt-4"> * Si no eres un creador, no necesitas un plan de pago.</p>
+                <h1 className="text-4xl font-bold text-white mb-10 text-center">Pricing Plans for Creators</h1>
+                <p className="text-center text-sm text-gray-300 mt-4"> * If you are not a creator, you do not need a payment plan..</p>
                 <br />
                 <div className="flex justify-center">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
-                        {planes.map((plan, index) => (
+                        {plans.map((plan, index) => (
                             <PlanCard key={index} plan={plan} onClick={() => handlePlanClick(plan.url)} />
                         ))}
                     </div>
                 </div>
                 <p className="text-center text-sm text-gray-300 mt-4">
-                    * Cancelación disponible después de 3 meses en cualquier momento.
+                    * Cancellation available after 3 months at any time.
                 </p>
                 <Footer />
             </main>
@@ -75,7 +75,7 @@ const Pricing = () => {
                         onClick={() => setShowIframe(false)}
                         className="absolute top-2 right-2 bg-gray-800 text-white py-2 px-5 rounded-lg cursor-pointer transition-colors hover:bg-red-500"
                     >
-                        Cerrar
+                        Close
                     </button>
                 </div>
             )}
