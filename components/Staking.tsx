@@ -22,7 +22,7 @@ type StakingProps = {
 
 const Staking = ({ data }: StakingProps) => {
   const account = useActiveAccount();
-  const [ownedNFS, setOwnedNFS] = useState<NFT[]>([]);
+  const [ownedNFP, setOwnedNFP] = useState<NFT[]>([]);
   const [fullView, setFullView] = useState(false);
   const [showSellModal, setShowSellModal] = useState(false);
   const [showPdfModal, setShowPdfModal] = useState(false);
@@ -46,33 +46,33 @@ const Staking = ({ data }: StakingProps) => {
     abi: stakingABI
   });
 
-  const getOwnedNFS = async () => {
-    let ownedNFS: NFT[] = [];
+  const getOwnedNFP = async () => {
+    let ownedNFP: NFT[] = [];
 
-    const totalNFSSupply = await totalSupply({
+    const totalNFPSupply = await totalSupply({
       contract: NFT_CONTRACT,
     });
-    const nfs = await getNFTs({
+    const nfp = await getNFTs({
       contract: NFT_CONTRACT,
       start: 0,
-      count: parseInt(totalNFSSupply.toString()),
+      count: parseInt(totalNFPSupply.toString()),
     });
 
-    for (let nfsItem of nfs) {
+    for (let nfpItem of nfp) {
       const owner = await ownerOf({
         contract: NFT_CONTRACT,
-        tokenId: nfsItem.id,
+        tokenId: nfpItem.id,
       });
       if (owner === account?.address) {
-        ownedNFS.push(nfsItem);
+        ownedNFP.push(nfpItem);
       }
     }
-    setOwnedNFS(ownedNFS);
+    setOwnedNFP(ownedNFP);
   };
 
   useEffect(() => {
     if (account) {
-      getOwnedNFS();
+      getOwnedNFP();
     }
   }, [account]);
 
@@ -132,7 +132,7 @@ const Staking = ({ data }: StakingProps) => {
             )}
             onTransactionConfirmed={() => {
               alert("NFT comprado!");
-              getOwnedNFS();
+              getOwnedNFP();
             }}
             className="text-xs bg-green-600 text-white py-1 px-3 rounded-lg cursor-pointer transition-colors hover:bg-green-500"
           >
@@ -148,12 +148,6 @@ const Staking = ({ data }: StakingProps) => {
       </div>
       <h2 className="text-lg font-bold">{data.creatorName}</h2>
       <p className="text-center text-sm mb-3">{data.description}</p>
-      {/* <button 
-        onClick={handlePdfClick} 
-        className="text-xs bg-blue-600 text-white py-1 px-3 rounded-lg cursor-pointer transition-colors hover:bg-blue-500 mt-3"
-      >
-        Ver informe financiero
-      </button> */}
       <br />
       <hr className="w-full border-gray-800"/>
       <div className="text-center text-sm mb-3">
@@ -193,7 +187,7 @@ const Staking = ({ data }: StakingProps) => {
             )}
             onTransactionConfirmed={() => {
               alert("NFT comprado!");
-              getOwnedNFS();
+              getOwnedNFP();
             }}
             className="text-xs bg-green-600 text-white py-1 px-3 rounded-lg cursor-pointer transition-colors hover:bg-green-500"
           >
@@ -214,7 +208,7 @@ const Staking = ({ data }: StakingProps) => {
      
       <hr className="w-full border-gray-800"/>
         <br />
-      <div className="bg-white bg-opacity-10 p-3 redondeado-lg shadow-lg mb-3 w-full">
+      <div className="bg-white bg-opacity-10 p-3 rounded-lg shadow-lg mb-3 w-full">
         <h3 className="text-md font-semibold mb-1">Impacto en las redes sociales</h3>
         <div className="flex flex-col space-y-2 text-sm">
         {/* @ts-ignore */}
@@ -238,55 +232,55 @@ const Staking = ({ data }: StakingProps) => {
       </div>
       <hr className="w-full border-gray-800"/>
       <div className="my-3 w-full text-sm">
-        <h2 className="text-md font-semibold mb-2">NFS Poseídas</h2>
+        <h2 className="text-md font-semibold mb-2">NFP en mi billetera:</h2>
         <button
           onClick={() => window.open(data.exclusiveContentLink, "_blank")}
           className="text-xs bg-blue-600 text-white py-1 px-3 rounded-lg cursor-pointer transition-colors hover:bg-blue-500 mt-3"
         >
           Contenido Exclusivo
         </button>
-        <div className="flex flex-row flex-wrap justificar-centro w-full">
-          {ownedNFS && ownedNFS.length > 0 ? (
-            ownedNFS.map((nfsItem) => (
+        <div className="flex flex-row flex-wrap justify-center w-full">
+          {ownedNFP && ownedNFP.length > 0 ? (
+            ownedNFP.map((nfpItem) => (
               <NFTCard
-                key={nfsItem.id}
-                nft={nfsItem}
+                key={nfpItem.id}
+                nft={nfpItem}
                 nftContract={NFT_CONTRACT}
                 stakingContract={STAKING_CONTRACT}
-                refetchOwnedNFTs={getOwnedNFS}
+                refetchOwnedNFTs={getOwnedNFP}
                 refetchStakedInfo={refetchStakedInfo}
               />
             ))
           ) : (
-            <p>No tienes NFS</p>
+            <p>No tienes NFP</p>
           )}
         </div>
       </div>
       <hr className="w-full border-gray-800"/>
       <div className="my-3 w-full text-sm">
-        <h2 className="text-md font-semibold mb-2">NFS Asignadas</h2>
-        <div className="flex flex-row flex-wrap justificar-centro w-full">
+        <h2 className="text-md font-semibold mb-2">NFP en recompensa</h2>
+        <div className="flex flex-row flex-wrap justify-center w-full">
           {stakedInfo && stakedInfo[0].length > 0 ? (
-            stakedInfo[0].map((nfsItem: any, index: number) => (
+            stakedInfo[0].map((nfpItem: any, index: number) => (
               <StakedNFTCard
                 key={index}
-                tokenId={nfsItem}
+                tokenId={nfpItem}
                 nftContract={NFT_CONTRACT}
                 stakingContract={STAKING_CONTRACT}
                 refetchStakedInfo={refetchStakedInfo}
-                refetchOwnedNFTs={getOwnedNFS}
+                refetchOwnedNFTs={getOwnedNFP}
               />
             ))
           ) : (
-            <p>No hay NFS asignadas</p>
+            <p>No hay NFP </p>
           )}
         </div>
       </div>
       <hr className="w-full border-gray-800"/>
       <StakeRewards rewardTokenContract={REWARD_TOKEN_CONTRACT} stakingContract={STAKING_CONTRACT} />
       {showSellModal && (
-        <div className="fixed inset-0 z-50 flex items-center justificar-centro bg-negro bg-opacidad-75">
-          <div className="relative bg-blanco redondeado-lg w-11/12 max-w-5xl p-6">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+          <div className="relative bg-white rounded-lg w-11/12 max-w-5xl p-6">
             <button
               onClick={() => setShowSellModal(false)}
               className="absolute top-2 right-2 bg-gray-800 text-white py-2 px-5 rounded-lg cursor-pointer transition-colors hover:bg-red-500"
