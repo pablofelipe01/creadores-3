@@ -151,10 +151,10 @@ const Staking = ({ data }: StakingProps) => {
       <br />
       <hr className="w-full border-gray-800"/>
       <div className="text-center text-sm mb-3">
-        <h3 className="text-md font-semibold">Símbolo: {data.tokenSymbol}</h3>
+        <h3 className="text-md font-semibold">{data.tokenSymbol}</h3>
         <p>Precio: {data.tokenPrice}</p>
         <img src={data.liquidityImgUrl} alt="Liquidez" className="inline-block h-5 w-5 ml-2"/>
-        <p>10% de las ganancias van a la liquidez</p>
+        {/* <p>10% de las ganancias van a la liquidez</p> */}
         <img src={data.infoImgUrl} alt="Información" className="mt-2"/>
       </div>
       <button

@@ -31,7 +31,7 @@ export const stakingData: StakingData[] = [
     rewardTokenContractAddress: "0x40798ad1280a8d323aA80E814B2Cbe0d4Ff6d36e",
     stakingContractAddress: "0x7c1e3Aff7D1579051C9aACFa024f74d5D9B3bFd1",
     buyLink: "https://payments.thirdweb.com/checkout/2c6d3822-c285-4afc-bcb7-5ed95a06eb3c",
-    sellLink: "https://dexscreener.com/polygon/0x48d411A641153C03245E0aaA3da315Ed198aF95b?embed=1&theme=dark",
+    sellLink: "https://app.uniswap.org/swap?outputCurrency=0x40798ad1280a8d323aA80E814B2Cbe0d4Ff6d36e&chain=polygon",
     socialMedia: [
       { platform: "Instagram", url: "https://www.instagram.com/elgorditofitofficial/", followers: 12000 },
       { platform: "X", url: "https://twitter.com", followers: 6500 },
