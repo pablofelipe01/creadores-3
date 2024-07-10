@@ -119,7 +119,7 @@ const Home = () => {
                 Emprendimientos y creadores
               </button>
               <button 
-                onClick={() => window.open('https://discord.gg/NmgrKvMJ', '_blank')} 
+                onClick={() => window.open('https://discord.gg/YjkJ6mrG', '_blank')} 
                 className="bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-500 transition flex items-center justify-center space-x-2"
               >
                 <FaDiscord className="text-xl" />
