@@ -138,12 +138,7 @@ const Staking = ({ data }: StakingProps) => {
           >
             COMPRAR
           </TransactionButton>
-          <button
-            onClick={handleSellClick}
-            className="text-xs bg-red-600 text-white py-1 px-3 rounded-lg cursor-pointer transition-colors hover:bg-red-500"
-          >
-            VENDER
-          </button>
+         
         </div>
       </div>
       <h2 className="text-lg font-bold">{data.creatorName}</h2>
@@ -154,7 +149,7 @@ const Staking = ({ data }: StakingProps) => {
         <h3 className="text-md font-semibold">{data.tokenSymbol}</h3>
         <p>Precio: {data.tokenPrice}</p>
         <img src={data.liquidityImgUrl} alt="Liquidez" className="inline-block h-5 w-5 ml-2"/>
-        {/* <p>10% de las ganancias van a la liquidez</p> */}
+      
         <img src={data.infoImgUrl} alt="Información" className="mt-2"/>
       </div>
       <button
@@ -193,12 +188,7 @@ const Staking = ({ data }: StakingProps) => {
           >
             COMPRAR
           </TransactionButton>
-          <button
-            onClick={handleSellClick}
-            className="text-xs bg-red-600 text-white py-1 px-3 rounded-lg cursor-pointer transition-colors hover:bg-red-500"
-          >
-            VENDER
-          </button>
+        
         </div>
       </div>
       <h2 className="text-lg font-bold">{data.creatorName}</h2>
@@ -208,6 +198,13 @@ const Staking = ({ data }: StakingProps) => {
      
       <hr className="w-full border-gray-800"/>
         <br />
+        <div className="text-center text-sm mb-3">
+        <h3 className="text-md font-semibold">{data.tokenSymbol}</h3>
+        <p>Precio: {data.tokenPrice}</p>
+        <img src={data.liquidityImgUrl} alt="Liquidez" className="inline-block h-5 w-5 ml-2"/>
+      
+        {/* <img src={data.infoImgUrl} alt="Información" className="mt-2"/> */}
+      </div>
       <div className="bg-white bg-opacity-10 p-3 rounded-lg shadow-lg mb-3 w-full">
         <h3 className="text-md font-semibold mb-1">Impacto en las redes sociales</h3>
         <div className="flex flex-col space-y-2 text-sm">
@@ -222,17 +219,12 @@ const Staking = ({ data }: StakingProps) => {
           ))}
         </div>
         <div>
-        <button 
-        onClick={handlePdfClick} 
-        className="text-xs bg-blue-600 text-white py-1 px-3 rounded-lg cursor-pointer transition-colors hover:bg-blue-500 mt-3"
-      >
-        Ver informe financiero
-      </button>
+      
         </div>
       </div>
       <hr className="w-full border-gray-800"/>
       <div className="my-3 w-full text-sm">
-        <h2 className="text-md font-semibold mb-2">NFP en mi billetera:</h2>
+        <h2 className="text-md font-semibold mb-2">LP en mi billetera:</h2>
         <button
           onClick={() => window.open(data.exclusiveContentLink, "_blank")}
           className="text-xs bg-blue-600 text-white py-1 px-3 rounded-lg cursor-pointer transition-colors hover:bg-blue-500 mt-3"
@@ -252,13 +244,13 @@ const Staking = ({ data }: StakingProps) => {
               />
             ))
           ) : (
-            <p>No tienes NFP</p>
+            <p>No tienes LP</p>
           )}
         </div>
       </div>
       <hr className="w-full border-gray-800"/>
       <div className="my-3 w-full text-sm">
-        <h2 className="text-md font-semibold mb-2">NFP en recompensa</h2>
+        <h2 className="text-md font-semibold mb-2">LP en recompensa</h2>
         <div className="flex flex-row flex-wrap justify-center w-full">
           {stakedInfo && stakedInfo[0].length > 0 ? (
             stakedInfo[0].map((nfpItem: any, index: number) => (
@@ -272,7 +264,7 @@ const Staking = ({ data }: StakingProps) => {
               />
             ))
           ) : (
-            <p>No hay NFP </p>
+            <p>No hay LP </p>
           )}
         </div>
       </div>
@@ -314,6 +306,12 @@ const Staking = ({ data }: StakingProps) => {
           </div>
         </div>
       )}
+        <button
+            onClick={handleSellClick}
+            className="text-xs bg-red-600 text-white py-1 px-3 rounded-lg cursor-pointer transition-colors hover:bg-red-500"
+          >
+            Vender Puntos
+          </button>
       <button
         onClick={() => setFullView(false)}
         className="text-xs bg-blue-600 text-white py-1 px-3 rounded-lg cursor-pointer transition-colors hover:bg-blue-500 mt-3"

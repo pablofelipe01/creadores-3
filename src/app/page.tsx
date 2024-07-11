@@ -10,7 +10,7 @@ import { client } from "@/app/client";
 import { useActiveAccount } from 'thirdweb/react';
 import { stakingData } from '../../utils/data';
 import dynamic from 'next/dynamic';
-import { FaWallet, FaUser, FaDiscord, FaChevronDown, FaChevronUp, FaVideo } from 'react-icons/fa';
+import { FaWallet, FaUser, FaDiscord, FaChevronDown, FaChevronUp, FaVideo, FaHandshake, FaGift, FaUserCog } from 'react-icons/fa';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation'; // Importa el hook useRouter
 
@@ -79,7 +79,6 @@ const Home = () => {
                 className="object-cover"
               />
             </div>
-            {/* <p className="text-lg md:text-2xl text-gray-200 mb-4">El mercado de valores de los emprendedores</p> */}
             <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
               <button 
                 onClick={toggleVideo} 
@@ -97,26 +96,46 @@ const Home = () => {
               </button>
             </div>
             <br />
-            <div className="max-w-lg mx-auto bg-gray-800 bg-opacity-75 p-6 rounded-lg mb-8">
-              <div className="flex items-center mb-4">
-                <FaWallet className="text-blue-400 text-2xl mr-3" />
-                <p className="text-gray-200 text-md">
-                ¿Te gustaría invertir en tu emprendimiento favorito? Solo conecta tu billetera. No te preocupes si no tienes una, se creará automáticamente.
-                </p>
-              </div>
-              <div className="flex items-center">
-                <FaUser className="text-green-400 text-2xl mr-3" />
-                <p className="text-gray-200 text-md">
-                  Si eres un emprendedor o un creador de contenido interesado en financiar tu proyecto, haz clic en el botón de emprendimiento a continuación.
-                </p>
-              </div>
-            </div>
+
+
+            <div className="max-w-5xl mx-auto bg-purple-900 bg-opacity-20 p-6 rounded-lg mb-8">
+  <div className="flex flex-col md:flex-row justify-between space-y-6 md:space-y-0 md:space-x-6">
+    <div className="bg-purple-800 bg-opacity-10 p-4 rounded-lg flex-1">
+      <h3 className="text-xl font-semibold text-white mb-2 flex items-center">
+        <FaHandshake className="mr-2 text-purple-300" /> Transforma la relación con tus seguidores
+      </h3>
+      <p className="text-gray-200">
+        ¡Únete a <b>True Social Token</b> y transforma la relación con tus seguidores! Ofrecemos un innovador programa de lealtad basado en tecnología Web 3 que incluye puntos de recompensa.
+      </p>
+    </div>
+    
+    <div className="bg-purple-800 bg-opacity-10 p-4 rounded-lg flex-1">
+      <h3 className="text-xl font-semibold text-white mb-2 flex items-center">
+        <FaGift className="mr-2 text-purple-300" /> Loyalty Pass (LP)
+      </h3>
+      <p className="text-gray-200">
+        Con nuestro <b>Loyalty Pass (LP)</b>, podrás ofrecer acceso a contenido exclusivo y recompensas únicas, mientras fortaleces tu conexión directa con tus seguidores sin intermediarios ni algoritmos.
+      </p>
+    </div>
+    
+    <div className="bg-purple-800 bg-opacity-10 p-4 rounded-lg flex-1">
+      <h3 className="text-xl font-semibold text-white mb-2 flex items-center">
+        <FaUserCog className="mr-2 text-purple-300" /> Espacio personalizado
+      </h3>
+      <p className="text-gray-200">
+        Crea un espacio personalizado e integrado con tus redes sociales y lleva tu marca al siguiente nivel. ¡Regístrate hoy y descubre el poder de una relación verdaderamente independiente y descentralizada con tu audiencia!
+      </p>
+    </div>
+  </div>
+</div>
+
+
             <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
               <button 
                 onClick={handleEmprendimientoClick} 
                 className="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-500 transition"
               >
-                Emprendimientos y creadores
+                Estoy interesad@
               </button>
               <button 
                 onClick={() => window.open('https://discord.gg/YjkJ6mrG', '_blank')} 
@@ -192,39 +211,31 @@ const Home = () => {
                 },             
                 {
                   "question": "¿Qué es TRUE SOCIAL TOKEN (TST)?",
-                  "answer": "TRUE SOCIAL TOKEN (TST) es una herramienta poderosa que te apoya en hacer lo que amas, conectándote directamente con tu comunidad. Sin intermediarios ni algoritmos que interfieran, TST te da la oportunidad de ser financieramente independiente."
+                  "answer": "TRUE SOCIAL TOKEN (TST) es una herramienta poderosa que te apoya en hacer lo que amas, conectándote directamente con tu comunidad. Sin intermediarios ni algoritmos que interfieran, TST te da la oportunidad de ser independiente."
                 },
                 {
-                  "question": "Tenías mi curiosidad. Ahora tienes mi atención. ¿Cómo funciona?",
-                  "answer": "Con TST puedes financiar tu propio emprendimiento vendiendo Non Fungible Passports (NFP) y recibiendo financiamiento directamente de tu comunidad."
+                  "question": "¿Cómo funciona?",
+                  "answer": "Con TST puedes crear tu propio programa de lealtad vendiendo Loyalty Passes (LP) y te conectas directamente de tu comunidad."
                 },
                 {
                   "question": "¿Cómo empiezo?",
                   "answer": "Después de registrarte, puedes comenzar configurando tu perfil, añadiendo tus cuentas de redes sociales y pensando en cómo tu comunidad podría apoyarte."
                 },
                 {
-                  "question": "¿Qué es un NFP?",
-                  "answer": "NFP significa Non Fungible Passport. Funciona de manera similar a las acciones en la bolsa de valores, pero de tu emprendimiento. Los NFP son pases exclusivos para tu comunidad."
+                  "question": "¿Qué es un LP?",
+                  "answer": "LP significa Loyalty Pass. Funciona de manera similar a las Millas, pero de tu emprendimiento. Los LP son pases exclusivos para tu comunidad."
                 },
                 {
                   "question": "¿Para qué sirve?",
-                  "answer": "Lo más importante es que los NFP generan “Puntos de Recompensa” y estos puntos pueden cambiarse por dinero. El valor de los puntos está directamente relacionado con el crecimiento de tu emprendimiento, así como en la bolsa de valores."
+                  "answer": "Lo más importante es que los LP generan “Puntos de Recompensa” y estos puntos pueden usarse para lo que tu quieras, pero algo muy importante es que tambien pueden cambiarse por dinero."
                 },
                 {
-                  "question": "¿Algo más puedo hacer con los NFP?",
-                  "answer": "Sí, puedes distribuir contenido exclusivo, beneficios especiales, descuentos, conciertos privados, enlaces a transmisiones en vivo, grupos de WhatsApp, una tarjeta de cumpleaños personal (el límite está en tu creatividad). Solo los usuarios que han comprado tu NFP y la almacenan en su billetera TST tienen acceso. TST te permite vivir de tu comunidad y liberarte de algoritmos secretos o de vender tu alma a los bancos."
+                  "question": "¿Algo más puedo hacer con los LP?",
+                  "answer": "Sí, puedes distribuir contenido exclusivo, beneficios especiales, descuentos, conciertos privados, enlaces a transmisiones en vivo, grupos de WhatsApp, una tarjeta de cumpleaños personal (el límite está en tu creatividad). Solo los usuarios que han comprado tu LP y la almacenan en su billetera TST tienen acceso. TST te permite vivir de tu comunidad y liberarte de algoritmos secretos."
                 },
                 {
-                  "question": "¿Cómo funcionan los NFP?",
-                  "answer": "Tan pronto como un fan compra un NFP, se almacena en su billetera TST (porque técnicamente es un NFT). Ahora tu fan tiene derecho a todos los beneficios de ese nivel. Recomendamos ofrecer diferentes niveles de NFP, variando en el precio y los beneficios. Cuanto mayor sea el pago, mayor será la recompensa."
-                },
-                {
-                  "question": "¿Cómo puedo financiarme a través de TST?",
-                  "answer": "Con TST recibes inversiones de tu comunidad que te ayudan a realizar o prefinanciar algo que necesitas o quieres hacer: mejor equipo, contenido especial... lo que necesites para mejorar tu emprendimiento y vender más. Dentro del NFP ofreces un porcentaje de la utilidad trimestral de tu emprendimiento a cambio de este financiamiento. Solo la tecnología WEB3 de TST permite que esto sea posible de una manera directa y transparente, sin intermediarios ni comisiones (ni siquiera necesitas bancos) y es MUY fácil de usar.\n\nCon una inversión de tu comunidad, comprometes una parte de tus ganancias. Tú decides: pedir un préstamo y devolver un porcentaje de tus ganancias en forma de intereses a un banco que nunca va a comprar tu producto ni a consumir tu contenido, o distribuirlo entre tus fans más leales."
-                },
-                {
-                  "question": "¿Estoy vendiendo o cediendo algún porcentaje de mi emprendimiento?",
-                  "answer": "No, tu emprendimiento seguirá siendo tuyo al 100%. Aquí solo estás comprometiendo un porcentaje de tu éxito con tu comunidad, esa comunidad que cree en ti y que ama lo que haces. Les estás diciendo, si me va bien a mí, les doy mejores productos, mejor contenido y además comparto mi éxito financiero con ustedes, que son la razón principal de que mi proyecto exista."
+                  "question": "¿Cómo funcionan los LP?",
+                  "answer": "Tan pronto como un fan compra un LP, se almacena en su billetera TST (porque técnicamente es un NFT). Ahora tu fan tiene derecho a todos los beneficios de ese nivel. Recomendamos ofrecer diferentes niveles de LP, variando en el precio y los beneficios. Cuanto mayor sea el pago, mayor será la recompensa."
                 },
                 {
                   "question": "¿Cómo hago que la gente me apoye en TST?",
@@ -240,7 +251,7 @@ const Home = () => {
                 },
                 {
                   "question": "¿Qué es una billetera?",
-                  "answer": "Una billetera es un hogar para tu activo digital. Se usan para enviar, recibir, almacenar y mostrar activos digitales. Es como una billetera real, solo que menos desordenada. Aprende más: [Understanding Web3](https://learn.rainbow.me/understanding-web3)"
+                  "answer": "Una billetera es un hogar para tu activo digital. Se usan para enviar, recibir, almacenar y mostrar activos digitales. Es como una billetera real, solo que menos desordenada. Aprende más: https://learn.rainbow.me/understanding-web3"
                 },
                 {
                   "question": "¿Qué es un NFT?",
@@ -252,12 +263,9 @@ const Home = () => {
                 },
                 {
                   "question": "¿Dónde puedo aprender más sobre blockchain y web3?",
-                  "answer": "Un buen comienzo es aquí: [Ethereum Learn](https://ethereum.org/en/learn/)"
+                  "answer": "Un buen comienzo es aquí: https://ethereum.org/en/learn"
                 },
-                {
-                  "question": "¿TST posee o tiene acceso a mis tokens o a las inversiones de mi comunidad?",
-                  "answer": "No, TST es un software no custodiado. Los usuarios son responsables de gestionar sus propias cuentas. TST solo es un proveedor de tecnología WEB3."
-                }
+                
               ].map((faq, index) => (
                 <div key={index} className="mb-4">
                   <div 

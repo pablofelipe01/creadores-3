@@ -23,11 +23,9 @@ export const StakeRewards: React.FC<StakeRewardsProps> = ({ rewardTokenContract,
         }
     );
 
-    // @ts-ignore
     const {
         data: stakedInfo,
         refetch: refetchStakedInfo,
-        // @ts-ignore 
     } = useReadContract({
         contract: stakingContract,
         method: "getStakeInfo",
@@ -43,13 +41,12 @@ export const StakeRewards: React.FC<StakeRewardsProps> = ({ rewardTokenContract,
     }, []);
 
     return (
-        <div className="w-full my-5 flex flex-col">
+        <div className="w-full my-5 flex flex-col items-center bg-gray-800 bg-opacity-50 p-4 rounded-lg shadow-md">
             {!isTokenBalanceLoading && (
-                <p>Wallet Balance: {toEther(BigInt(tokenBalance!.toString()))}</p>
+                <p className="mb-4 text-gray-200 font-semibold">Balance en Mi Billetera: {toEther(BigInt(tokenBalance!.toString()))}</p>
             )}
 
-            {/* @ts-ignore */}
-            <h2 className="mb-5">Rewards: {stakedInfo && toEther(BigInt(stakedInfo[1].toString()))}</h2>
+            <h2 className="mb-5 text-gray-200 font-semibold">Puntos por reclamar: {stakedInfo && toEther(BigInt(stakedInfo[1].toString()))}</h2>
 
             <TransactionButton
                 transaction={() => (
@@ -63,9 +60,9 @@ export const StakeRewards: React.FC<StakeRewardsProps> = ({ rewardTokenContract,
                     refetchStakedInfo();
                     refetchTokenBalance();
                 }}
-                className="border-none bg-gray-800 text-white p-2.5 rounded-lg cursor-pointer w-full text-xs"
+                className="border-none bg-blue-600 text-white p-3 rounded-lg cursor-pointer w-full text-sm hover:bg-blue-700 transition duration-300 ease-in-out"
             >
-                Claim Rewards
+                Reclamar Puntos
             </TransactionButton>
         </div>
     );

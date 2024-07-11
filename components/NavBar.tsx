@@ -43,12 +43,14 @@ export const NavBar = () => {
             )}
           </button>
           <div className="hidden md:block">
-            <button 
+
+         
+            {/* <button 
               onClick={handleGlobalClick}
               className="focus:outline-none bg-blue-600 text-white py-1 px-3 rounded-lg hover:bg-blue-500 transition-colors"
             >
               Recargar billetera
-            </button>
+            </button> */}
           </div>
           <Link href="/pricing" legacyBehavior>
             <a className="hidden md:block focus:outline-none bg-green-600 text-white py-1 px-3 rounded-lg hover:bg-green-500 transition-colors">
