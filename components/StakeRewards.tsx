@@ -26,7 +26,9 @@ export const StakeRewards: React.FC<StakeRewardsProps> = ({ rewardTokenContract,
     const {
         data: stakedInfo,
         refetch: refetchStakedInfo,
+        //@ts-ignore
     } = useReadContract({
+        
         contract: stakingContract,
         method: "getStakeInfo",
         params: [account?.address || ""],
@@ -45,8 +47,11 @@ export const StakeRewards: React.FC<StakeRewardsProps> = ({ rewardTokenContract,
             {!isTokenBalanceLoading && (
                 <p className="mb-4 text-gray-200 font-semibold">Balance en Mi Billetera: {toEther(BigInt(tokenBalance!.toString()))}</p>
             )}
-
-            <h2 className="mb-5 text-gray-200 font-semibold">Puntos por reclamar: {stakedInfo && toEther(BigInt(stakedInfo[1].toString()))}</h2>
+            {/* @ts-ignore */}
+            <h2 className="mb-5 text-gray-200 font-semibold">
+                {/* @ts-ignore */}
+                Puntos por reclamar: {stakedInfo && stakedInfo[1] !== undefined ? toEther(BigInt(stakedInfo[1].toString())) : '0'}
+            </h2>
 
             <TransactionButton
                 transaction={() => (

@@ -237,7 +237,9 @@ const Staking = ({ data }: StakingProps) => {
               <NFTCard
                 key={nfpItem.id}
                 nft={nfpItem}
+                  // @ts-ignore
                 nftContract={NFT_CONTRACT}
+                  // @ts-ignore
                 stakingContract={STAKING_CONTRACT}
                 refetchOwnedNFTs={getOwnedNFP}
                 refetchStakedInfo={refetchStakedInfo}
